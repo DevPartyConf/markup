@@ -29,7 +29,7 @@ $('.toggle-menu').click(function () {
     $('.toggle-menu__sandwitch').toggleClass('active');
     $('header').toggleClass('active');
 });
-
+// Speakers slider
 $(document).ready(function () {
     $('#responsive').lightSlider({
         item: 4,
@@ -59,4 +59,38 @@ $(document).ready(function () {
             }
         ]
     });
+});
+// Registration button
+$('.header__title_button').click(function (e) {
+    $(window).scrollTo('#registration', 600, {
+        offset: {
+            top: -30
+        }
+    });
+    e.preventDefault();
+});
+// Ask organisators
+$('.ask, a.header__title_h2').click(function (e) {
+    $(window).scrollTo('#contacts', 600, {
+        offset: {
+            top: -30
+        }
+    });
+    e.preventDefault();
+});
+// Submit talk
+$('.speak').click(function (e) {
+
+    var review = $('.container .review');
+
+    review.closest('.col-lg-12').find('.review').addClass('hidden');
+    review.closest('.col-lg-12').find('.form-box_white').addClass('active');
+
+    $.scrollTo('#speaker-form', 600, {
+        offset: {
+            top: -100
+        }
+    });
+
+    e.preventDefault();
 });
