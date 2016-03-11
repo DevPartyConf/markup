@@ -37,10 +37,11 @@
     padding-right: 15px;
   }
   body .logo {
-    background: url("../img/sprite.png") 0 0;
+    background-image: url("../img/logo/logo.png");
     width: 226px;
     height: 67px;
     margin: 0;
+    background-size: cover;
   }
   header.active .nav {
     display: block;

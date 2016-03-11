@@ -33,7 +33,7 @@ $('.toggle-menu').click(function () {
 $(document).ready(function () {
     $('#responsive').lightSlider({
         item: 4,
-        auto: true,
+        auto: false,
         loop: false,
         slideMove: 2,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
@@ -92,5 +92,10 @@ $('.speak').click(function (e) {
         }
     });
 
+    e.preventDefault();
+});
+// Scroll top
+$('.logo').click(function (e) {
+    $.scrollTo('#index', 600);
     e.preventDefault();
 });
