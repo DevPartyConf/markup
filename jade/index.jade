@@ -5,6 +5,7 @@ html
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="stylesheet", href="css/main.css")
+    link(rel="stylesheet", href="css/lightslider.min.css")
     link(rel='shortcut icon', href='favicon.ico')
   body
     section#index
@@ -15,13 +16,13 @@ html
               .menu
                 ul
                   li.menu__title
-                    a.menu__link.menu__link_blue.menu__link_current(href="") 2016
+                    a.menu__link.menu__link_blue.menu__link_current(href="#") 2016
                   li.menu__title
-                    a.menu__link.menu__link_blue(href="") 2015
+                    a.menu__link.menu__link_blue(href="#") 2015
                   li.menu__title
-                    a.menu__link.menu__link_blue(href="") 2014
+                    a.menu__link.menu__link_blue(href="#") 2014
                   li.menu__title
-                    a.menu__link.menu__link_blue(href="") 2013
+                    a.menu__link.menu__link_blue(href="#") 2013
       header
         .head
           .container
@@ -52,8 +53,8 @@ html
                 h1.header__title__h Dev 
                   span.header__title__h_red party
                 h2.header__title_h2 2 апреля в 
-                  span.header__title_h2 Вологде
-                a(href="").button.button_anim.header__title_button Регистрация
+                  a(href="#").header__title_h2 Вологде
+                a(href="#").button.button_anim.header__title_button Регистрация
                 .socials.socials_bottom
                   ul
                     li.socials__title
@@ -70,77 +71,114 @@ html
           .col-lg-12
             .content-box-2
               h2.content-box__h2 О конференции
-              p.content-box__p2 Вас, вероятно, удивляет, почему его так странно зовут, а если вы знаете английский, то вы удивитесь еще больше. Это необыкновенное имя подарил ему Кристофер Робин. Надо вам сказать, что когда-то Кристофер Робин был знаком с одним лебедем на пруду, которого он звал Пухом. Для лебедя это было очень подходящее имя, потому что если ты зовешь лебедя громко: "Пу-ух! Пу-ух!" — а он не откликается, то ты всегда можешь сделать вид, что ты просто понарошку стрелял; а если ты звал его тихо, то все подумают, что ты просто подул себе на нос. Лебедь потом куда-то делся, а имя осталось, и Кристофер Робин решил отдать его своему медвежонку, чтобы оно не пропало зря.
+              p.content-box__p2 Смотри в оба!<br><br>Так уж повелось, что до проведения конференции разработчиков Dev Party весна отказывается приходить в наш город. Мы же, выступающие всеми руками за прогресс, желаем скорейшего прихода тепла.<br><br>Именно поэтому (а ещё потому что у нас накопилось немало интересных докладов и тем для обсуждения) мы и организуем Dev Party 2016! Конференция пройдёт в рамках 7-ого межрегионального IT-форума. Начало 2 апреля в 10 часов. 
             .content-box.content-box_white
               h2#schedule.content-box__h Программа
               p.content-box__p Пока наполняется. Если вы хотите выступить с докладом, <br> обратитесь к 
-                a(href="") организаторам 
-                | или 
-                a(href="") заполните заявку
+                a.ask(href="#contacts") организаторам
+                |  или 
+                a.speak(href="#speaker-form") заполните заявку
             .content-box
               h2#speakers.content-box__h Докладчикам
-              p.content-box__p.content-box__p_m Надо вам сказать, что когда-то Кристофер Робин был знаком с одним лебедем на пруду, которого он звал Пухом. Для лебедя это было очень подходящее имя, потому что если ты зовешь лебедя громко: "Пу-ух! Пу-ух!" — а он не откликается, то ты всегда можешь сделать вид, что ты просто понарошку стрелял; а если ты звал его тихо, то все подумают, что ты просто подул себе на нос. Лебедь потом куда-то делся, а имя осталось, и Кристофер Робин решил отдать его своему медвежонку, чтобы оно не пропало зря.
-            a.button.button_anim.section_button.review(href="") Зарегистрироваться
+              p.content-box__p.content-box__p_m Принимаются доклады на темы, относящиеся к разработке ПО. Особо приветствуются доклады по трендовым вопросам.<br><br>На конференцию не принимаются доклады рекламного характера.<br><br>Процесс рассмотрения заявок:<br>После получения заявки члены Программного комитета вправе задавать вопросы или дать рекомендации автору. После вынесения решения автору высыпается уведомление.<br><br>Регламент выступления - 30 минут. Язык выступления - русский.
+            a.button.button_anim.section_button.review(href="") Подать доклад
             .form-box.form-box_white
               span.form-box__close свренуть
-              h.form-box__h Заявка на выступление
-              form.row
-                label.col-md-12(for="") ФИО (обязательно)
-                  input.form-box__input.form-box__input_blue.input_error(type="text")
-                label.col-md-12(for="") Организация
-                  input.form-box__input.form-box__input_blue(type="text")
-                label.col-md-12(for="") Должность
-                  input.form-box__input.form-box__input_blue(type="text")
-                label.col-md-6.col-sm-6.col-xs-12(for="") Email (обязательно)
-                  input.form-box__input.form-box__input_blue.input_error(type="text")
-                label.col-md-6.col-sm-6.col-xs-12(for="") Телефон
-                  input.form-box__input.form-box__input_blue(type="text")
-                .tezis.col-md-6.col-sm-6.col-xs-12
-                  span.file Прикрепить фаил с тезисами
-                  input.form-box__input.form-box__input_blue.form-box__input_file(type="file")
+              h2#speaker-form.form-box__h Подать доклад
+              form(action="//devparty.us12.list-manage.com/subscribe/post?u=d8162f2478dc28a2491719736&amp;id=5c0bedfafb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank").row
+                label.col-md-12(for="mce-LNAME") Фамилия (обязательно)
+                  input.form-box__input.form-box__input_blue(type="text" name="LNAME" id="mce-LNAME")
+                label.col-md-12(for="mce-FNAME") Имя (обязательно)
+                  input.form-box__input.form-box__input_blue(type="text" name="FNAME" id="mce-FNAME")
+                label.col-md-12(for="mce-COMPANY") Организация
+                  input.form-box__input.form-box__input_blue(type="text" name="COMPANY" id="mce-COMPANY")
+                label.col-md-12(for="mce-POSITION") Должность
+                  input.form-box__input.form-box__input_blue(type="text" name="POSITION" id="mce-POSITION")
+                label.col-md-6.col-sm-6.col-xs-12(for="mce-EMAIL") Email (обязательно)
+                  input.form-box__input.form-box__input_blue(type="text" name="EMAIL" id="mce-EMAIL")
+                label.col-md-6.col-sm-6.col-xs-12(for="mce-PHONE") Телефон (обязательно)
+                  input.form-box__input.form-box__input_blue(type="text" name="PHONE" id="mce-PHONE")
+                  input(type="hidden" name="b_d8162f2478dc28a2491719736_5c0bedfafb")
+                //.tezis.col-md-6.col-sm-6.col-xs-12
+                //  span.file Прикрепить фаил с тезисами
+                //  input.form-box__input.form-box__input_blue.form-box__input_file(type="file")
                 .col-md-12.col-sm-12
-                  input.button.section_button(type="button",value='Отпарвить')
+                  input.button.section_button(type="submit",value='Отправить')
     section.section_grey
       .container
         .row
           .col-lg-12
             .content-box
-              h2#contacts.content-box__h.content-box__h_white Контакты
+              h2.content-box__h.content-box__h_white Докладчики
               .content-box__contacts
-                ul.row
+                //div.lSAction
+                //  a.lSPrev
+                //  a.lSNext
+                ul#responsive.row
                   li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/1.png", alt="team")
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
-                        h3.contact__h Олеся <br> Воронович
-                        a.link(href="tel:+7 900 876 5432") +7 900 876 5432
-                        a.link(href="") hello@devparty.ru
+                        h3.contact__h Алексей <br> Пахомов
+                        span.link Директор
+                        span.link ББК «АЛЬПА»
                   li.col-md-3.col-sm-3.contacts_m
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/2.png", alt="team")
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
-                        h3.contact__h Илья <br> Севостьянов
-                        a.link(href="tel:+7 900 876 5432") +7 900 876 5432
-                        a.link(href="") hello@devparty.ru
+                        h3.contact__h Александр <br> Мочалыгин
+                        span.link Ведущий разработчик
+                        span.link calltouch.net
                   li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/3.png", alt="team")
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
-                        h3.contact__h Роман <br> Оксенюк
-                        a.link(href="tel:+7 900 876 5432") +7 900 876 5432
-                        a.link(href="") hello@devparty.ru
+                        h3.contact__h Евгений <br> Безымянников
+                        span.link Teamlead
+                        span.link ООО «Комод»
                   li.col-md-3.col-sm-3.contacts_m
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/4.png", alt="team")
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
-                        h3.contact__h Олег <br> Стрекаловский
-                        a.link(href="tel:+7 900 876 5432") +7 900 876 5432
-                        a.link(href="") hello@devparty.ru
-      .map-box
+                        h3.contact__h Андрей <br> Валдуев
+                        span.link QA-специалист
+                        span.link Playrix
+                  li.col-md-3.col-sm-3
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/5.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Валерий <br> Чугреев
+                        span.link Старший научный сотрудник
+                        span.link ИСЭРТ РАН
+                  li.col-md-3.col-sm-3.contacts_m
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/6.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Владимир <br> Колесов
+                        span.link Специалист по WEB разработке
+                  li.col-md-3.col-sm-3
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/7.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Александр<br> Тарасов
+                        span.link Директор по маркетингу
+                        span.link Playrix
+                  li.col-md-3.col-sm-3.contacts_m
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/8.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Сергей <br> Шестаков
+                        span.link Технический директор
+                        span.link Playrix
+      .map-box#contacts
         .map-box__yandex
           <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xZsSuuzU06swnyVcq9n-WQPWMVkIoHBR&width=100%&height=444&lang=ru_RU&sourceType=constructor"></script>
         .map-box__adress
@@ -152,34 +190,33 @@ html
                   ul
                     li.map-box__li Вологда,
                     li.map-box__li ул. Пушкинская, 25а
-                    li.map-box__li «Русский Дом», 
-                  h4 Поблизости
-                  a(href="").map-box__link.map-box__link_current Кафе
-                  a(href="").map-box__link Банкоматы
-                  a(href="").map-box__link Гостиницы
+                    li.map-box__li «Русский Дом»,
+                  h4 Контакты
+                  div.contacts +7-911-504-33-16 <br> olesya@devparty.ru
+                  //a(href="").map-box__link.map-box__link_current Кафе
+                  //a(href="").map-box__link Банкоматы
+                  //a(href="").map-box__link Гостиницы
     section.section_blue
       .container
         .row
           .col-lg-12
             .content-box.content-box_m
               h2#testimonials.content-box__h Отзывы
-              p.content-box__p.content-box__p_white Очень понравилась организация мероприятия, интересные докладчики. Особенно понравилось про Bitrix и доклад Олеси Воронович — узнал себя в её примерах :) Жаль, не было времени сходить на обед — к последней секции уже очень хотелось есть.
-              span.content-box__autor Александр Петров,
-              span.content-box__position ведущий программист DevSoft
+              p.content-box__p.content-box__p_white Был приятно удивлен количеству людей и качеству материалов.<br><br>Несмотря на то, что из первого доклада я понял процентов около 30%, я все же почерпнул для себя что-то полезное. Теперь на одном из наших проектов мы вчера внедрили PJAX и теперь у нас тоже музыка играет при переходе на другую страницу.<br><br>Записал все незнакомые слова - буду изучать :)<br><br>Спасибо организаторам и докладчикам!
+              span.content-box__autor Павел Нгуен,
+              span.content-box__position Основатель smmbox.com
             .content-box.content-box_m
-              p.content-box__p.content-box__p_white Здравствуйте. Спасибо за конференцию. Доклады сами по себе интересные, но ничего нового (наверное, к счастью для меня) я не узнал. Я понимаю, вы ориентировались на начинающих веб-разработчиков, но, даже если бы я был таковым, мне было бы скучновато. Потому что ту информацию, что озвучили на докладах, я спокойно нашёл бы в сети (а её я находил и в большом количестве). Во-вторых, ... Думаю, на этом всё. 
-              span.content-box__autor Посититель
+              p.content-box__p.content-box__p_white Конференция организована на должном уровне. Порадовало большое количество докладчиков.
+              span.content-box__autor Александр Асланов
             .content-box.content-box_m
-              p.content-box__p.content-box__p_white Здравствуйте! Хочу сказать спасибо за такую замечательную конференцию;) Очень понравились доклады. Почерпнул для себя много нового. Так же хочу отметить нестандартность объяснения схемы работы в команде:))) Игра была очень увлекательной!!! Организаторы, молодцы! Надеюсь, что такие мероприятия станут чаще:)
-              span.content-box__autor Денис усачев
+              p.content-box__p.content-box__p_white Огромное спасибо Олесе Воронович за организацию конференции на высочайшем уровне! Так же спасибо Денису Горбунову - модератору второго зала, Тамаре Пешковой за твиттер-трансляцию, Саше Владимирову за прекрасные фото, и другим людям, которые помогли провести эту прекрасную конференцию. Респект всем спикерам! Доклады, которые мне удалось послушать, были актуальны и интересны.
+              span.content-box__autor Дмитрий Кукушкин,
+              span.content-box__position Web Developer at Wargaming
             .content-box.content-box_m
-              p.content-box__p.content-box__p_white Очень понравилась организация мероприятия, интересные докладчики. Особенно понравилось про Bitrix и доклад Олеси Воронович — узнал себя в её примерах :) Жаль, не было времени сходить на обед — к последней секции уже очень хотелось есть.
-              span.content-box__autor Александр Петров,
-              span.content-box__position ведущий программист DevSoft
-            .content-box.content-box_m
-              p.content-box__p.content-box__p_white Здравствуйте. Спасибо за конференцию. Доклады сами по себе интересные, но ничего нового (наверное, к счастью для меня) я не узнал. Я понимаю, вы ориентировались на начинающих веб-разработчиков, но, даже если бы я был таковым, мне было бы скучновато. Потому что ту информацию, что озвучили на докладах, я спокойно нашёл бы в сети (а её я находил и в большом количестве). Во-вторых, ... Думаю, на этом всё. 
-              span.content-box__autor Посититель
-            a(href="").button.button_anim.section_button.review Написать отзыв
+              p.content-box__p.content-box__p_white Было всё круто, удачно выбрано время для тех, кто в субботу свободен.<br><br>1. Как некоторые заметили - наверно стоит для расширения аудитории немного подкорректировать название группы и мероприятия, чтобы подчеркнуть, что доклады не обязаны быть только про web. Тут могут быть доклады и по мобильной разработке, дизайну, юзабилити, каким нить методологиям разработки, личному опыту работы с разными технологиями и т.д и т.п.. <br><br>В общем о всём, что может быть интересно прогрессивным ИТ-шникам в Вологде 😊<br><br>2. Также наверно стоит провести более активную рассылку о мероприятии по компаниям (Синапс, US, и т.п.)<br><br>3. Возможно, пока проблемы с небольшой посещаемостью связаны с временем отпусков.<br><br>4. Помещение для Meetup-а вполне комфортное, но что будет, когда на них будет ходить +10-15 человек.<br><br>5. Возможно стоит повесить голосовалку - какими темами народ больше интересуется, сделать обсуждение типа "хотел бы услышать о ...", "хочу/могу рассказать о ...".<br><br>
+              span.content-box__autor Олег Стрекаловский,
+              span.content-box__position Программист Smilart
+            //a(href="").button.button_anim.section_button.review Написать отзыв
             .form-box.form-box_white
               span.form-box__close свренуть
               h.form-box__h Написать отзыв
@@ -199,19 +236,20 @@ html
             .content-box
               h2#registration.content-box__h.content-box__h_white Регистрация
             .form-box.form-box_anim
-              form.row 
-                label.col-md-6.col-sm-6(for="") Имя (обязательно)
-                  input.form-box__input.input_error(type="text")
-                label.col-md-6.col-sm-6(for="") Фамилия
-                  input.form-box__input(type="text")
-                label.col-md-12(for="") Организация
-                  input.form-box__input(type="text")
-                label.col-md-6.col-sm-6(for="") E-mail (обязательно)
-                  input.form-box__input.form-box__input_p(type="text")
-                label.col-md-6.col-sm-6(for="") Телефон
-                  input.form-box__input.form-box__input_p(type="text")
+              form.row(action="//devparty.us12.list-manage.com/subscribe/post?u=d8162f2478dc28a2491719736&amp;id=dd21b5b9d2" method="post" name="mc-embedded-subscribe-form" target="_blank")
+                label.col-md-6.col-sm-6(for="p-mce-FNAME") Имя (обязательно)
+                  input.form-box__input(type="text" name="FNAME" id="p-mce-FNAME")
+                label.col-md-6.col-sm-6(for="p-mce-LNAME") Фамилия
+                  input.form-box__input(type="text" name="LNAME" id="p-mce-LNAME")
+                label.col-md-12(for="p-mce-COMPANY") Организация
+                  input.form-box__input(type="text" name="COMPANY" id="p-mce-COMPANY")
+                label.col-md-6.col-sm-6(for="p-mce-EMAIL") E-mail (обязательно)
+                  input.form-box__input.form-box__input_p(type="text" name="EMAIL" id="p-mce-EMAIL")
+                label.col-md-6.col-sm-6(for="p-mce-PHONE") Телефон
+                  input.form-box__input.form-box__input_p(type="text" name="PHONE" id="p-mce-PHONE")
                 .col-md-12.col-sm-12
-                  input.button.button_anim.section_button(type="button",value='Зарегистрироваться')
+                  input(type="hidden" name="b_d8162f2478dc28a2491719736_dd21b5b9d2")
+                  input.button.button_anim.section_button(type="submit",value='Зарегистрироваться')
     footer
       .container
         .footer__box
@@ -239,5 +277,7 @@ html
                 li.socials__title
                   a.socials__youtube.socials__youtube_black(href="https://www.youtube.com/channel/UClZl8d7-zRequR1MVlRPT7A/" target="_blank")
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     script(src='js/jquery.singlePageNav.min.js')
+    script(src='js/lightslider.min.js')
     script(src='js/main.js')
