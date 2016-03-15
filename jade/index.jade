@@ -39,7 +39,7 @@ html
                   li.nav__title
                     a.nav__link(href="#schedule") Программа
                   li.nav__title
-                    a.nav__link(href="#speakers") Докладчикам
+                    a.nav__link(href="#speakers") Докладчики
                   li.nav__title
                     a.nav__link(href="#contacts") Контакты
                   li.nav__title
@@ -75,42 +75,13 @@ html
             .content-box.content-box_white
               h2#schedule.content-box__h Программа
               p.content-box__p Пока наполняется. Если вы хотите выступить с докладом, <br> обратитесь к 
-                a.ask(href="#contacts") организаторам
-                |&nbsp;или&nbsp;
-                a.speak(href="#speaker-form") заполните заявку
-                |.
-            .content-box
-              h2#speakers.content-box__h Докладчикам
-              p.content-box__p.content-box__p_m Принимаются доклады на темы, относящиеся к разработке ПО. Особо приветствуются доклады по трендовым вопросам.<br><br>На конференцию не принимаются доклады рекламного характера.<br><br>Процесс рассмотрения заявок:<br>После получения заявки члены Программного комитета вправе задавать вопросы или дать рекомендации автору. После вынесения решения автору высыпается уведомление.<br><br>Регламент выступления — 30 минут. Язык выступления — русский.
-            a.button.button_anim.section_button.review(href="") Подать доклад
-            .form-box.form-box_white
-              span.form-box__close свернуть
-              h2#speaker-form.form-box__h Подать доклад
-              form(action="//devparty.us12.list-manage.com/subscribe/post?u=d8162f2478dc28a2491719736&amp;id=5c0bedfafb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank").row
-                label.col-md-12(for="mce-LNAME") Фамилия (обязательно)
-                  input.form-box__input.form-box__input_blue(type="text" name="LNAME" id="mce-LNAME")
-                label.col-md-12(for="mce-FNAME") Имя (обязательно)
-                  input.form-box__input.form-box__input_blue(type="text" name="FNAME" id="mce-FNAME")
-                label.col-md-12(for="mce-COMPANY") Организация
-                  input.form-box__input.form-box__input_blue(type="text" name="COMPANY" id="mce-COMPANY")
-                label.col-md-12(for="mce-POSITION") Должность
-                  input.form-box__input.form-box__input_blue(type="text" name="POSITION" id="mce-POSITION")
-                label.col-md-6.col-sm-6.col-xs-12(for="mce-EMAIL") Email (обязательно)
-                  input.form-box__input.form-box__input_blue(type="text" name="EMAIL" id="mce-EMAIL")
-                label.col-md-6.col-sm-6.col-xs-12(for="mce-PHONE") Телефон (обязательно)
-                  input.form-box__input.form-box__input_blue(type="text" name="PHONE" id="mce-PHONE")
-                  input(type="hidden" name="b_d8162f2478dc28a2491719736_5c0bedfafb")
-                //.tezis.col-md-6.col-sm-6.col-xs-12
-                //  span.file Прикрепить фаил с тезисами
-                //  input.form-box__input.form-box__input_blue.form-box__input_file(type="file")
-                .col-md-12.col-sm-12
-                  input.button.section_button(type="submit",value='Отправить')
+                a.ask(href="#contacts") организаторам.
     section.section_grey
       .container
         .row
           .col-lg-12
             .content-box
-              h2.content-box__h.content-box__h_white Докладчики
+              h2#speakers.content-box__h.content-box__h_white Докладчики
               .content-box__contacts
                 //div.lSAction
                 //  a.lSPrev
