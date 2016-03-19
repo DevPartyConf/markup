@@ -1,12 +1,18 @@
 doctype
 html
   head 
-    title DevParty
+    title Конференция разработчиков «DevParty» 2016
+    meta(name='description' content="Приглашаем Вас принять участие в конференции разработчиков Dev Party 2016 в Вологде")
+    meta(name='keywords' content="devparty 2016 конференция разработчиков вологда межрегиональный it форум")
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="stylesheet", href="css/main.css")
     link(rel="stylesheet", href="css/lightslider.min.css")
     link(rel='shortcut icon', href='favicon.ico')
+    meta(property="og:url" content="https://devparty.ru")
+    meta(property="og:title" content="Конференция разработчиков «DevParty» 2016")
+    meta(property="og:description" content="Смотри в оба! Конференция «DevParty» 2016 пройдёт в рамках 7-го межрегионального IT-форума. Начало 2 апреля в 10 часов.")
+    meta(property="og:image" content="https://devparty.ru/img/logo/logo.png")
   body
     section#index
       .year
@@ -39,7 +45,7 @@ html
                   li.nav__title
                     a.nav__link(href="#schedule") Программа
                   li.nav__title
-                    a.nav__link(href="#speakers") Докладчикам
+                    a.nav__link(href="#speakers") Спикеры
                   li.nav__title
                     a.nav__link(href="#contacts") Контакты
                   li.nav__title
@@ -75,42 +81,13 @@ html
             .content-box.content-box_white
               h2#schedule.content-box__h Программа
               p.content-box__p Пока наполняется. Если вы хотите выступить с докладом, <br> обратитесь к 
-                a.ask(href="#contacts") организаторам
-                |&nbsp;или&nbsp;
-                a.speak(href="#speaker-form") заполните заявку
-                |.
-            .content-box
-              h2#speakers.content-box__h Докладчикам
-              p.content-box__p.content-box__p_m Принимаются доклады на темы, относящиеся к разработке ПО. Особо приветствуются доклады по трендовым вопросам.<br><br>На конференцию не принимаются доклады рекламного характера.<br><br>Процесс рассмотрения заявок:<br>После получения заявки члены Программного комитета вправе задавать вопросы или дать рекомендации автору. После вынесения решения автору высыпается уведомление.<br><br>Регламент выступления — 30 минут. Язык выступления — русский.
-            a.button.button_anim.section_button.review(href="") Подать доклад
-            .form-box.form-box_white
-              span.form-box__close свернуть
-              h2#speaker-form.form-box__h Подать доклад
-              form(action="//devparty.us12.list-manage.com/subscribe/post?u=d8162f2478dc28a2491719736&amp;id=5c0bedfafb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank").row
-                label.col-md-12(for="mce-LNAME") Фамилия (обязательно)
-                  input.form-box__input.form-box__input_blue(type="text" name="LNAME" id="mce-LNAME")
-                label.col-md-12(for="mce-FNAME") Имя (обязательно)
-                  input.form-box__input.form-box__input_blue(type="text" name="FNAME" id="mce-FNAME")
-                label.col-md-12(for="mce-COMPANY") Организация
-                  input.form-box__input.form-box__input_blue(type="text" name="COMPANY" id="mce-COMPANY")
-                label.col-md-12(for="mce-POSITION") Должность
-                  input.form-box__input.form-box__input_blue(type="text" name="POSITION" id="mce-POSITION")
-                label.col-md-6.col-sm-6.col-xs-12(for="mce-EMAIL") Email (обязательно)
-                  input.form-box__input.form-box__input_blue(type="text" name="EMAIL" id="mce-EMAIL")
-                label.col-md-6.col-sm-6.col-xs-12(for="mce-PHONE") Телефон (обязательно)
-                  input.form-box__input.form-box__input_blue(type="text" name="PHONE" id="mce-PHONE")
-                  input(type="hidden" name="b_d8162f2478dc28a2491719736_5c0bedfafb")
-                //.tezis.col-md-6.col-sm-6.col-xs-12
-                //  span.file Прикрепить фаил с тезисами
-                //  input.form-box__input.form-box__input_blue.form-box__input_file(type="file")
-                .col-md-12.col-sm-12
-                  input.button.section_button(type="submit",value='Отправить')
+                a.ask(href="#contacts") организаторам.
     section.section_grey
       .container
         .row
           .col-lg-12
             .content-box
-              h2.content-box__h.content-box__h_white Докладчики
+              h2#speakers.content-box__h.content-box__h_white Спикеры
               .content-box__contacts
                 //div.lSAction
                 //  a.lSPrev
@@ -123,7 +100,7 @@ html
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Алексей <br> Пахомов
                         span.link Директор
-                        span.link ББК «АЛЬПА»
+                        a.link(href="http://alpaburo.ru" target="_blank") ББК «АЛЬПА»
                   li.col-md-3.col-sm-3.contacts_m
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
@@ -131,7 +108,7 @@ html
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Александр <br> Мочалыгин
                         span.link Ведущий разработчик
-                        span.link calltouch.net
+                        a.link(href="http://calltouch.net" target="_blank") calltouch.net
                   li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
@@ -139,7 +116,7 @@ html
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Евгений <br> Безымянников
                         span.link Teamlead
-                        span.link ООО «Комод»
+                        a.link(href="http://calltouch.net" target="_blank") ООО «Комод»
                   li.col-md-3.col-sm-3.contacts_m
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
@@ -147,7 +124,7 @@ html
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Андрей <br> Валдуев
                         span.link QA-специалист
-                        span.link Playrix
+                        a.link(href="http://www.playrix.ru", target="_blank") Playrix
                   li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
@@ -170,7 +147,7 @@ html
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Александр<br> Тарасов
                         span.link Директор по маркетингу
-                        span.link Playrix
+                        a.link(href="http://www.playrix.ru", target="_blank") Playrix
                   li.col-md-3.col-sm-3.contacts_m
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
@@ -178,7 +155,7 @@ html
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Сергей <br> Шестаков
                         span.link Технический директор
-                        span.link Playrix
+                        a.link(href="http://www.playrix.ru", target="_blank") Playrix
                   li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
@@ -193,7 +170,7 @@ html
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Владимир <br> Варнавский
                         span.link Руководитель
-                        span.link Студия «33 Кита»
+                        a.link(href="http://www.33kita.ru/" target="_blank") Студия «33 Кита»
                   li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
@@ -202,6 +179,30 @@ html
                         h3.contact__h Дмитрий <br> Ивакин
                         span.link Cистемный архитектор
                         span.link ООО "Пайлабс"
+                  li.col-md-3.col-sm-3.contacts_m
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/12.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Николай <br> Головкин
+                        span.link Разработчик ПО
+                        a.link(href="http://yandex.ru" target="_blank") Яндекс
+                  li.col-md-3.col-sm-3
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/13.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Игорь <br> Косулин
+                        span.link Разработчик ПО
+                        a.link(href="http://unvsoft.com/" target="_blank") Universal Software
+                  li.col-md-3.col-sm-3.contacts_m
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/14.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Юрий <br> Петров
+                        span.link Data Architect
+                        a.link(href="http://www.mts.ru/" target="_blank") MTS Group
       .map-box#contacts
         .map-box__yandex
           <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xZsSuuzU06swnyVcq9n-WQPWMVkIoHBR&width=100%&height=444&lang=ru_RU&sourceType=constructor"></script>
@@ -241,11 +242,11 @@ html
               span.content-box__autor Участник
               //span.content-box__position
             .content-box.content-box_m
-              p.content-box__p.content-box__p_white Очень понравилась оргнизация мероприятия, интересные докладчики. Особенно понравилось про Bitrix и доклад Олеси Воронович - узнал себя в её примерах :) Жаль, не было времени сходить на обед - к последней секции уже очень хотелось есть.
+              p.content-box__p.content-box__p_white Очень понравилась организация мероприятия, интересные докладчики. Особенно понравилось про Bitrix и доклад Олеси Воронович - узнал себя в её примерах :) Жаль, не было времени сходить на обед - к последней секции уже очень хотелось есть.
               span.content-box__autor Участник
               //span.content-box__position
             .content-box.content-box_m
-              p.content-box__p.content-box__p_white Большое спасибо за конференцию. Для себя я получила много полезной информации. Организация понравилась, очень хорошо, что доклады чередовались с перерывами, что была проведена игра. Что можно улучшить? Может быть, давать по-больше информационных мероприятий в печатном виде.
+              p.content-box__p.content-box__p_white Большое спасибо за конференцию. Для себя я получила много полезной информации. Организация понравилась, очень хорошо, что доклады чередовались с перерывами, что была проведена игра. Что можно улучшить? Может быть, давать побольше информационных мероприятий в печатном виде.
               span.content-box__autor Участник
               //span.content-box__position
             .content-box.content-box_m
@@ -308,11 +309,13 @@ html
                   | © Dev Party,
                   | 2016  
                 li 
-                  | Дизайн — 
-                  a(href="http://noonki.org/" target="_blank") Круглова Ольга
+                  | Дизайн —
+                  noindex
+                    a(href="http://noonki.org/" target="_blank" rel="nofollow") Круглова Ольга
                 li 
                   | Верстка —
-                  a(href="http://new-level.by" target="_blank") New-level
+                  noindex
+                    a(href="http://new-level.by" target="_blank" rel="nofollow") New-level
             .col-md-6.col-sm-6.right
               span.dev
               ul.socials
@@ -324,8 +327,10 @@ html
                   a.socials__twitter.socials__twitter_black(href="https://twitter.com/devparty_conf" target="_blank")
                 li.socials__title
                   a.socials__youtube.socials__youtube_black(href="https://www.youtube.com/channel/UClZl8d7-zRequR1MVlRPT7A/" target="_blank")
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    noindex <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    noindex <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
     script(src='js/jquery.singlePageNav.min.js')
     script(src='js/lightslider.min.js')
     script(src='js/main.js')
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36119605 = new Ya.Metrika({ id:36119605, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/36119605" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-75226628-1', 'auto');ga('send', 'pageview');</script>

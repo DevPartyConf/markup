@@ -49,6 +49,12 @@ gulp.task('copy', function () {
 
     gulp.src('assets/favicon/favicon.ico')
         .pipe(gulp.dest('dist'));
+
+    gulp.src('assets/robots.txt')
+        .pipe(gulp.dest('dist'));
+
+    gulp.src('assets/sitemap.xml')
+        .pipe(gulp.dest('dist'));
 });
 
 gulp.task('default', ['connect', 'copy', 'jade', 'stylus', 'watch']);
