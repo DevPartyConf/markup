@@ -14,3 +14,8 @@ $('.logo').click(function (e) {
     $.scrollTo('#index', 600);
     e.preventDefault();
 });
+// Toggle menu funciton
+$('.toggle-menu').click(function () {
+    $('.toggle-menu__sandwitch').toggleClass('active');
+    $('header').toggleClass('active');
+});
