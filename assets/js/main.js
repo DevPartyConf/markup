@@ -99,3 +99,42 @@ $('.logo').click(function (e) {
     $.scrollTo('#index', 600);
     e.preventDefault();
 });
+// Adoptive schedule
+$(function(){
+    resizeProgram();
+});
+
+$(window).resize(resizeProgram);
+
+function resizeProgram() {
+    var height = 0;
+
+    if ($(window).width() > 400) {
+        $('#sec-1').children(".block").each(function (index) {
+            if (index < 6)
+                height += parseInt($(this).css('height')) + parseInt($(this).css('margin-top'));
+        });
+        $('.spec-space').css('margin-top', (height + 1) + 'px');
+
+        var block_6 = $('#sec-1').children(".block")[6];
+        var block_7 = $('#sec-1').children(".block")[7];
+        var block_8 = $('#sec-1').children(".block")[8];
+        var block_9 = $('#sec-1').children(".block")[9];
+        var block_10 = $('#sec-1').children(".block")[10];
+        var block_11 = $('#sec-1').children(".block")[11];
+
+        $('.spec-1').css({'height': $(block_6).css('height'), 'padding': '0px'});
+        $('.spec-1 .desc').css('padding', '0 3%');
+        $('.spec-2').css('height', $(block_7).css('height'));
+        $('.spec-3').css('height', $(block_8).css('height'));
+        $('.spec-4').css('height', (parseInt($(block_9).css('height')) + parseInt($(block_10).css('height')) / 2) + 'px');
+        $('.spec-5').css('height', (parseInt($(block_10).css('height')) / 2 + parseInt($(block_11).css('height'))) + 'px');
+    } else {
+        $('.spec-space').css('margin-top', '0px');
+        $('.spec-1').css('height', 'auto');
+        $('.spec-2').css('height', 'auto');
+        $('.spec-3').css('height', 'auto');
+        $('.spec-4').css('height', 'auto');
+        $('.spec-5').css('height', 'auto');
+    }
+}
