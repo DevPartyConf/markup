@@ -77,11 +77,168 @@ html
           .col-lg-12
             .content-box-2
               h2.content-box__h2 О конференции
-              p.content-box__p2 Смотри в оба!<br><br>Так уж повелось, что до проведения конференции разработчиков Dev Party весна отказывается приходить в наш город. Мы же, выступающие всеми руками за прогресс, желаем скорейшего прихода тепла.<br><br>Именно поэтому (а ещё потому что у нас накопилось немало интересных докладов и тем для обсуждения) мы и организуем Dev Party 2016! Конференция пройдёт в рамках 7-го межрегионального IT-форума. Начало 2 апреля в 10 часов. 
-            .content-box.content-box_white
+              p.content-box__p2 Где? В Вологде!<br>Что? Party... DevParty!<br> Когда? Весной - без DevParty весна отказывается к нам приходить! <br><br>DevParty - это весенняя уборка в головах, которые мы стараемся укомплектовать новыми знаниями. Раскладываем по полочкам нужное, избавляемся от устаревшего и ненужного! В этом нам помогают наши докладчики и участники, задающие им интересные вопросы. Основной фокус нашего внимания - Software Development, разработка программного обеспечения, а также смежные темы - тестирование, проект-менеджмент, продвижение ИТ-проектов и всё, что может оказаться полезным для современного айтишника. <br><br>В 2016 году конференция DevParty пройдёт в рамках 7-го межрегионального IT-форума. Место проведения - г. Вологда, ул. Пушкинская, 25а («Русский Дом»). Время начала - 2 апреля в 10 часов, регистрация стартует за 30 минут до события.
+            .content-box.content-box_white.schedule
               h2#schedule.content-box__h Программа
-              p.content-box__p Пока наполняется. Если вы хотите выступить с докладом, <br> обратитесь к 
-                a.ask(href="#contacts") организаторам.
+              #program_headers
+                p.p_head.software Software Development
+                p.p_head.marketing Marketing
+                p.p_head.qa QA
+                p.p_head.management Project management
+                .clear
+              #sec-1.section
+                p.room.bordered 1 зал
+                .clear
+                .block
+                  .time 10:00 – 10:20
+                  .desc
+                    | Регистрация участников
+                  .clear
+                .block
+                  .time 10:20 – 10:30
+                  .desc
+                    | Открытие. Приветствие участников конференции
+                  .clear
+                .block.software
+                  .time 10:30 – 11:00
+                  .desc
+                    | Node.js: realtime приложение на примере системы управления очередью
+                    br
+                    span.name Ивакин Дмитрий,
+                    span.company  системный архитектор ООО «Пайлабс»
+                  .clear
+                .block.software
+                  .time 11:00 – 11:50
+                  .desc
+                    | Микросервисы — микро зло и огромное добро
+                    br
+                    span.name Евгений Безымянников,
+                    span.company  teamlead ООО «Комод»
+                  .clear
+                .block.software
+                  .time 11:50 – 13:00
+                  .desc
+                    | Инфраструктура Big Data — от источников до быстрых витрин
+                    br
+                    span.name Юрий Петров,
+                    span.company  data architect MTS Group
+                  .clear
+                .block
+                  .time 13:00 – 14:00
+                  .desc
+                    | Обед
+                  .clear
+                .block.software
+                  .time 14:00 – 14:30
+                  .desc
+                    | Яндекс.Транспорт
+                    br
+                    span.name Николай Головкин,
+                    span.company  разработчик ПО Яндекс
+                  .clear
+                .block.software
+                  .time 14:30 – 15:00
+                  .desc
+                    | Битва добра со злом: Dart vs TypeScript
+                    br
+                    span.name Игорь Косулин,
+                    span.company  разработчик ПО Universal Software
+                  .clear
+                .block.software
+                  .time 15:00 – 15:45
+                  .desc
+                    | Архитектура MVC в контексте web-разработки — проблемы и решения
+                    br
+                    span.name Валерий Чугреев,
+                    span.company  старший научный сотрудник ИСЭРТ РАН
+                  .clear
+                .block.software
+                  .time 15:45 – 16:15
+                  .desc
+                    | Современные приложения на JS: один код для сервера и для браузера
+                    br
+                    span.name Александр Улизько,
+                    span.company  full stack JavaScript разработчик
+                  .clear
+                .block.software
+                  .time 16:15 – 16:45
+                  .desc
+                    | Web-разработка автоматизированной технологической системы на коленке. Практический опыт
+                    br
+                    span.name Михаил Салтаев
+                  .clear
+                .block.software
+                  .time 16:45 – 17:15
+                  .desc
+                    | РНР7 и равен ли переезд двум пожарам?
+                    br
+                    span.name Александр Мочалыгин,
+                    span.company  ведущий разработчик calltouch.net
+                  .clear
+                .block.software
+                  .time 17:15 – 17:45
+                  .desc
+                    | Разработка мобильных игр
+                    br
+                    span.name Сергей Шестаков,
+                    span.company  технический директор Playrix
+                  .clear
+              .section
+                p.room.bordered 2 зал
+                .clear
+                .block.marketing.spec-space.spec-1
+                  .time 14:30 – 15:00
+                  .desc
+                    | Продвижение мобильных приложений (user acquisition)
+                    br
+                    span.name Александр Тарасов,
+                    span.company  директор по маркетингу Playrix
+                  .clear
+                .block.qa.spec-2
+                  .time 15:00 – 15:45
+                  .desc
+                    | Тестирование игр на мобильных платформах
+                    br
+                    span.name Валдуев Андрей,
+                    span.company  QA-специалист Playrix
+                  .clear
+                .block.management.spec-3
+                  .time 15:45 – 16:15
+                  .desc
+                    | Как запускать проекты вовремя
+                    br
+                    span.name Владимир Варнавский,
+                    span.company  руководитель студии «33 Кита»
+                  .clear
+                .block.management.spec-4
+                  .time 16:15 – 17:00
+                  .desc
+                    | 20% задач которые дают 80% результата — главное при разработке коммерческих сайтов
+                    br
+                    span.name Владимир Колесов,
+                    span.company  специалист по WEB-разработке
+                  .clear
+                .block.management.spec-5
+                  .time 17:00 – 17:30
+                  .desc
+                    | Как фрилансеру зарабатывать больше?
+                    br
+                    span.name Алексей Пахомов,
+                    span.company  директор ББК «АЛЬПА»
+                  .clear
+              .clear
+              .section
+                .block
+                  .time 17:45 – 18:00
+                  .desc
+                    | Закрытие конференции
+                  .clear
+                .block.bordered
+                  .time 19:00
+                  .desc
+                    | AfterDevParty
+                  .clear
+              .clear
     section.section_grey
       .container
         .row
@@ -93,6 +250,38 @@ html
                 //  a.lSPrev
                 //  a.lSNext
                 ul#responsive.row
+                  li.col-md-3.col-sm-3
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/14.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Юрий <br> Петров
+                        span.link Data Architect
+                        a.link(href="http://www.mts.ru/" target="_blank") MTS Group
+                  li.col-md-3.col-sm-3.contacts_m
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/12.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Николай <br> Головкин
+                        span.link Разработчик ПО
+                        a.link(href="http://yandex.ru" target="_blank") Яндекс
+                  li.col-md-3.col-sm-3
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/3.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Евгений <br> Безымянников
+                        span.link Teamlead
+                        span.link ООО «Комод»
+                  li.col-md-3.col-sm-3.contacts_m
+                    .row
+                      .col-md-12.col-md-12.col-sm-12.col-xs-5
+                        img(src="img/persons/8.png", alt="team")
+                      .col-md-12.col-md-12.col-sm-12.col-xs-7
+                        h3.contact__h Сергей <br> Шестаков
+                        span.link Технический директор
+                        a.link(href="http://www.playrix.ru", target="_blank") Playrix
                   li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
@@ -112,20 +301,12 @@ html
                   li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
-                        img(src="img/persons/3.png", alt="team")
-                      .col-md-12.col-md-12.col-sm-12.col-xs-7
-                        h3.contact__h Евгений <br> Безымянников
-                        span.link Teamlead
-                        a.link(href="http://calltouch.net" target="_blank") ООО «Комод»
-                  li.col-md-3.col-sm-3.contacts_m
-                    .row
-                      .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/4.png", alt="team")
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Андрей <br> Валдуев
                         span.link QA-специалист
                         a.link(href="http://www.playrix.ru", target="_blank") Playrix
-                  li.col-md-3.col-sm-3
+                  li.col-md-3.col-sm-3.contacts_m
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/5.png", alt="team")
@@ -133,28 +314,20 @@ html
                         h3.contact__h Валерий <br> Чугреев
                         span.link Старший научный сотрудник
                         span.link ИСЭРТ РАН
-                  li.col-md-3.col-sm-3.contacts_m
+                  li.col-md-3.col-sm-3
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/6.png", alt="team")
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Владимир <br> Колесов
                         span.link Специалист по WEB разработке
-                  li.col-md-3.col-sm-3
+                  li.col-md-3.col-sm-3.contacts_m
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/7.png", alt="team")
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Александр<br> Тарасов
                         span.link Директор по маркетингу
-                        a.link(href="http://www.playrix.ru", target="_blank") Playrix
-                  li.col-md-3.col-sm-3.contacts_m
-                    .row
-                      .col-md-12.col-md-12.col-sm-12.col-xs-5
-                        img(src="img/persons/8.png", alt="team")
-                      .col-md-12.col-md-12.col-sm-12.col-xs-7
-                        h3.contact__h Сергей <br> Шестаков
-                        span.link Технический директор
                         a.link(href="http://www.playrix.ru", target="_blank") Playrix
                   li.col-md-3.col-sm-3
                     .row
@@ -182,27 +355,12 @@ html
                   li.col-md-3.col-sm-3.contacts_m
                     .row
                       .col-md-12.col-md-12.col-sm-12.col-xs-5
-                        img(src="img/persons/12.png", alt="team")
-                      .col-md-12.col-md-12.col-sm-12.col-xs-7
-                        h3.contact__h Николай <br> Головкин
-                        span.link Разработчик ПО
-                        a.link(href="http://yandex.ru" target="_blank") Яндекс
-                  li.col-md-3.col-sm-3
-                    .row
-                      .col-md-12.col-md-12.col-sm-12.col-xs-5
                         img(src="img/persons/13.png", alt="team")
                       .col-md-12.col-md-12.col-sm-12.col-xs-7
                         h3.contact__h Игорь <br> Косулин
                         span.link Разработчик ПО
                         a.link(href="http://unvsoft.com/" target="_blank") Universal Software
-                  li.col-md-3.col-sm-3.contacts_m
-                    .row
-                      .col-md-12.col-md-12.col-sm-12.col-xs-5
-                        img(src="img/persons/14.png", alt="team")
-                      .col-md-12.col-md-12.col-sm-12.col-xs-7
-                        h3.contact__h Юрий <br> Петров
-                        span.link Data Architect
-                        a.link(href="http://www.mts.ru/" target="_blank") MTS Group
+
       .map-box#contacts
         .map-box__yandex
           <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=xZsSuuzU06swnyVcq9n-WQPWMVkIoHBR&width=100%&height=444&lang=ru_RU&sourceType=constructor"></script>
@@ -333,4 +491,4 @@ html
     script(src='js/lightslider.min.js')
     script(src='js/main.js')
     <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36119605 = new Ya.Metrika({ id:36119605, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/36119605" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-75226628-1', 'auto');ga('send', 'pageview');</script>
+    script (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-75226628-1', 'auto');ga('send', 'pageview');
