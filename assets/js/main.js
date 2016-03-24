@@ -111,8 +111,9 @@ function resizeProgram() {
 
     if ($(window).width() > 483) {
         $('#sec-1').children(".block").each(function (index) {
-            if (index < 6)
+            if (index < 6) {
                 height += parseInt($(this).css('height')) + parseInt($(this).css('margin-top'));
+            }
         });
 
         $('.spec-space').css('margin-top', (height + 1) + 'px');
@@ -123,8 +124,7 @@ function resizeProgram() {
             if (parseInt($(block).children(".desc").css('height')) > parseInt($('.spec-' + i + ' .desc').css('height'))) {
                 $('.spec-' + i).css('height', $(block).css('height'));
                 $(block).css('height', 'auto');
-            }
-            else {
+            } else {
                 $('.spec-' + i).css('height', 'auto');
                 $(block).css('height', $('.spec-' + i).css('height'));
             }
