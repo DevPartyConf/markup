@@ -14,7 +14,7 @@ gulp.task('connect', function () {
 });
 
 gulp.task('jade', function () {
-    gulp.src('jade/*.jade')
+    gulp.src('jade/*/*.jade')
         .pipe(jade({
             pretty: true
         }))
@@ -33,8 +33,8 @@ gulp.task('stylus', function () {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('stylus/*.styl', ['stylus']);
-    gulp.watch('jade/*.jade', ['jade']);
+    gulp.watch('stylus/*/*.styl', ['stylus']);
+    gulp.watch('jade/*/*.jade', ['jade']);
 });
 
 gulp.task('copy', function () {
