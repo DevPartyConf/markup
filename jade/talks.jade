@@ -75,19 +75,55 @@ html
       .container
         .row
           .col-lg-12
+            h2.content-box__h2 Доклады
+        #talk-1.row.talk
+          .col-lg-3
             .content-box-2
-              h3.content-box__h3 РНР7 и равен ли переезд двум пожарам?
+              img(src="../img/persons/14.png", alt="Юрий Петров")
+              .links
+                a(href="https://www.facebook.com/gobigdata.info" target="_blank")
+                  img(src="../img/talks/facebook.png", alt="Facebook")
+                a(href="https://www.linkedin.com/in/petrovgobigdata" target="_blank")
+                  img(src="../img/talks/linkedin.png", alt="LinkedIn")
+          .col-lg-9
+            .content-box-2
+              h2.talk Инфраструктура Big Data - от источников до быстрых витрин
+              p.content-box__p_mm  В докладе я постараюсь донести до аудитории общую концепцию построения инфраструктуры Big Data.
+              |Основные тезисы доклада:
+              ul
+                li.normal Big Data и крупный бизнес 
+                li.normal Самое понятное определение Big Data </br>
+                li.normal Источники данных или где нужен анализ данных в реальном времени</br>
+                li.normal Почему пришла Big Data на смену традиционной инфраструктуре</br>
+                li.normal Какие преимущества предоставляет Big Data архитектура</br>
+                li.normal За счет чего в Big Data архитектуре реализованы все эти преимущества</br>
+                li.normal Описание ключевых контейнеров HDFS</br>
+                li.normal Data Lake</br>
+                li.normal Подходы к обработке массивов данных</br>
+                li.normal Гарантированная доставка информации</br>
+                li.normal Обработка потока</br>
+                li.normal Быстрые витрины - быстрая отдача информации - Redis и AeroSpike</br>
+                li.normal NoSQL витрина для внутренних потребителей</br>
+                li.normal Преимущества документо-ориентированных БД над реляционными</br>
+                li.normal Графовые БД - высшая ступень эволюции</br>
+                li.normal Дополнительные преимущества графовых БД</br>
+              h3.speaker Юрий Петров, ПАО «МТС»
+              br
+              p С 2001 года моделирую реляционные базы данных. С 2007 года выступаю в роли архитектора на проектах построения и оптимизации высоконагруженных реляционных хранилищ в крупнейших банках, госструктурах и телекоме. С 2012 года Big Data евангелист, участвую в проектах построения Big Data инфраструктуры и Data Lake. С 2013 года архитектор на проектах миграции традиционных реляционных хранилищ и витрин на Data Lake, а так же на Document-oriented и Graph-oriented NoSQL базы данных.
+        #2.row.talk
+          .col-lg-3
+            .content-box-2
+              img(src="../img/persons/2.png", alt="Александр Молчалыгин")
+              .links
+                a(href="https://www.facebook.com/gobigdata.info" target="_blank")
+                  img(src="../img/talks/facebook.png", alt="Facebook")
+                a(href="https://www.linkedin.com/in/petrovgobigdata" target="_blank")
+                  img(src="../img/talks/linkedin.png", alt="LinkedIn")
+          .col-lg-9
+            .content-box-2
+              h2.talk РНР7 и равен ли переезд двум пожарам?
               p.content-box__p_mm Опыт переезда на РНР7 нашего проекта (хайлоад, несколько серверов, много legacy-кода, в том числе написанного незнакомыми друг с другом фрилансерами). Новое в РНР7. Почему ругать РНР становится всё сложнее.
-              div(style="margin-top:10px;")
-                img(src="../img/persons/2.png", alt="Александр Молчалыгин" style="float:left; margin-right:10px; margin-bottom")
-                h3.content-box__h3 Александр Молчалыгин, 
-                  a(href="http://calltouch.net" target="_blank") Calltouch
-                a(href="mailto:a@mochalygin.ru" target="_blank")
-                  img(src="../img/talks/mail.png", hint="Email" alt="Email" style="margin-top:10px;margin-right:10px; margin-bottom")
-                div(style="padding-left:200px")
-                  p.content-box__p_mm Программист.
-              
-              
+              h3.speaker Александр Молчалыгин, Программист Calltouch
     footer 
       .container
         .footer__box
