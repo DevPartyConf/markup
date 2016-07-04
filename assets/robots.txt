@@ -1,7 +1,7 @@
 User-agent: Yandex
 Disallow: /js/
-Host: devparty.ru
+Host: https://devparty.ru
 
 User-agent: *
 Disallow: /js/
-Sitemap: http://devparty.ru/sitemap.xml
+Sitemap: https://devparty.ru/sitemap.xml
