@@ -1,9 +1,9 @@
 doctype
 html
   head 
-    title Конференция разработчиков «DevParty» 2016
-    meta(name='description' content="Приглашаем Вас принять участие в конференции разработчиков Dev Party 2016 в Вологде")
-    meta(name='keywords' content="devparty 2016 конференция разработчиков вологда межрегиональный it форум")
+    title Конференция разработчиков «DevParty» 2017
+    meta(name='description' content="Приглашаем Вас принять участие в конференции разработчиков Dev Party 2017 в Вологде")
+    meta(name='keywords' content="devparty 2017 конференция разработчиков вологда")
     meta(charset='utf-8')
     meta(http-equiv="Cache-Control" content="no-cache")
     meta(name='viewport', content='width=device-width, initial-scale=1')
@@ -11,8 +11,8 @@ html
     link(rel="stylesheet", href="css/lightslider.min.css")
     link(rel='shortcut icon', href='favicon.ico')
     meta(property="og:url" content="https://devparty.ru")
-    meta(property="og:title" content="Конференция разработчиков «DevParty» 2016")
-    meta(property="og:description" content="Смотри в оба! Конференция «DevParty» 2016 пройдёт в рамках 7-го межрегионального IT-форума. Начало 2 апреля в 10 часов.")
+    meta(property="og:title" content="Конференция разработчиков «DevParty» 2017")
+    // meta(property="og:description" content="Смотри в оба! Конференция «DevParty» 2016 пройдёт в рамках 7-го межрегионального IT-форума. Начало 2 апреля в 10 часов.")
     meta(property="og:image" content="https://devparty.ru/img/logo/logo.png")
   body
     section#index
@@ -23,7 +23,9 @@ html
               .menu
                 ul
                   li.menu__title
-                    a.menu__link.menu__link_blue.menu__link_current(href="#") 2016
+                    a.menu__link.menu__link_blue.menu__link_current(href="#") 2017
+                  li.menu__title
+                    a.menu__link.menu__link_blue.menu__link_current(href="http://2016.devparty.ru" target="_blank") 2016
                   //li.menu__title
                   //  a.menu__link.menu__link_blue(href="#") 2015
                   //li.menu__title
@@ -43,15 +45,15 @@ html
                 a(href="#index").logo
               nav.col-md-9.col-sm-11
                 ul.nav
-                  li.nav__title
+                  // li.nav__title
                     a.nav__link(href="#schedule") Программа
-                  li.nav__title
+                  // li.nav__title
                     a.nav__link(href="#speakers") Спикеры
                   li.nav__title
                     a.nav__link(href="#contacts") Контакты
                   li.nav__title
                     a.nav__link(href="#testimonials") Отзывы
-                  li.nav__title
+                  // li.nav__title
                     a.nav__link(href="#registration") Регистрация
         .container
           .row 
@@ -59,9 +61,9 @@ html
               .header__title
                 h1.header__title__h Dev 
                   span.header__title__h_red party
-                h2.header__title_h2 2 апреля в&nbsp;
-                  a(href="#").header__title_h2 Вологде
-                a(href="#").button.button_anim.header__title_button Регистрация
+                // h2.header__title_h2 2 апреля в&nbsp;
+                     a(href="#").header__title_h2 Вологде
+                // a(href="#").button.button_anim.header__title_button Регистрация
                 .socials.socials_bottom
                   ul
                     li.socials__title
@@ -78,8 +80,10 @@ html
           .col-lg-12
             .content-box-2
               h2.content-box__h2 О конференции
-              p.content-box__p2 DevParty 2016 делала новая команда организаторов. Мы не просто поменяли название – мы ушли от тематики только web-разработки и решили, что будем повышать качество того, что мы делаем. DevParty сохранит свой статус площадки №1 для общения разработчиков Вологды, но мы будем приглашать к участию и сторонних докладчиков (на каждой уважающей себя вечеринке есть крутой ди-джей!). В 2016 году почти треть выступавших были приезжими – 5 из 16 докладчиков представляли московские компании. Повышение качества контента, как мы надеемся, вызовет интерес и у участников из других городов России. Будем ждать новых гостей и партнёров!<br><br>Нам важно стать лучше – если вы участвовали в DevParty 2016, <a href="http://goo.gl/forms/TsGqaPCUz0" target="_blank">оставьте нам фидбек!</a><br><br>В 2015 году на конференции, которая тогда называлась WebDev, было 50 человек. В 2016 нам удалось собрать 150 участников, то есть по сравнению с прошлым годом мы выросли в 3 раза! Наш сайт за пару месяцев его существования посетило более 3200 человек, и это тоже отличный старт!<br><br>Уже понятно, что есть над чем работать – проведём опросы по темам потенциальных докладов, сделаем список FAQ для докладчиков и спонсорское предложение, составим кодекс уважительного поведения для гостей конференции, продумаем AfterDevParty и культурную программу для тех, кто ещё не был в Вологде. Впереди серьёзная, но очень радостная подготовка к DevParty 2017!<br><br>А пока <a href="https://yadi.sk/d/hmfj4-jpqqDnU" target="_blank">смотрите фотоотчёт 2016 года</a> – спасибо, что были с нами! Ждём вас снова в 2017 году!
-            .content-box.content-box_white.schedule
+              p.content-box__p2 
+                a(href="http://2016.devparty.ru" target="_blank") DevParty 2016 
+                делала новая команда организаторов. Мы не просто поменяли название – мы ушли от тематики только web-разработки и решили, что будем повышать качество того, что мы делаем. DevParty сохранит свой статус площадки №1 для общения разработчиков Вологды, но мы будем приглашать к участию и сторонних докладчиков (на каждой уважающей себя вечеринке есть крутой ди-джей!). В 2016 году почти треть выступавших были приезжими – 5 из 16 докладчиков представляли московские компании. Повышение качества контента, как мы надеемся, вызовет интерес и у участников из других городов России. Будем ждать новых гостей и партнёров!<br><br>В 2015 году на конференции, которая тогда называлась WebDev, было 50 человек. В 2016 нам удалось собрать 150 участников, то есть по сравнению с прошлым годом мы выросли в 3 раза! Наш сайт за пару месяцев его существования посетило более 3200 человек, и это тоже отличный старт!<br><br>Уже понятно, что есть над чем работать – проведём опросы по темам потенциальных докладов, сделаем список FAQ для докладчиков и спонсорское предложение, составим кодекс уважительного поведения для гостей конференции, продумаем AfterDevParty и культурную программу для тех, кто ещё не был в Вологде. Впереди серьёзная, но очень радостная подготовка к DevParty 2017!<br><br>А пока <a href="https://yadi.sk/d/hmfj4-jpqqDnU" target="_blank">смотрите фотоотчёт 2016 года</a> – спасибо, что были с нами! Ждём вас снова в 2017 году!
+            // .content-box.content-box_white.schedule
               h2#schedule.content-box__h Программа
               #program_headers
                 p.p_head.software Software Development
@@ -311,7 +315,7 @@ html
                     | AfterDevParty в #[a(href="https://vk.com/luckystardiner" target="_blank") LuckyStar]
                   .clear
               .clear
-    section.section_grey
+    // section.section_grey
       .container
         .row
           .col-lg-12
@@ -514,7 +518,7 @@ html
                   textarea.form-box__text.form-box__input.form-box__input_text.form-box__input_blue(name="message")
                 .col-md-12.col-sm-12
                   input.button.section_button(type="button",value='Отправить')
-    section.section_grey
+    // section.section_grey
       .container
         .row
           .col-lg-12
