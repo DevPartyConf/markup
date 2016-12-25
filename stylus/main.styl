@@ -403,12 +403,12 @@ input, textarea
 section
   overflow hidden
 @media
-only screen and (-webkit-min-device-pixel-ratio:2),
-only screen and (min--moz-device-pixel-ratio:2),
-only screen and (-o-min-device-pixel-ratio:2/1),
-only screen and (min-device-pixel-ratio:2),
-only screen and (min-resolution:192dpi),
-only screen and (min-resolution:2dppx) {
+only screen and (-webkit-min-device-pixel-ratio 2),
+only screen and (min--moz-device-pixel-ratio 2),
+only screen and (-o-min-device-pixel-ratio 2/1),
+only screen and (min-device-pixel-ratio 2),
+only screen and (min-resolution 192dpi),
+only screen and (min-resolution 2dppx)
   body .logo {
     background-image:url(../img/logo/logo.png);
     background-size:226px 67px;
@@ -420,7 +420,6 @@ only screen and (min-resolution:2dppx) {
     width 40px
     background-position: 0 0;
   }
-}
 
 @media screen and (min-width: 760px)
   #responsive

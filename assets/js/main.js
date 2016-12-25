@@ -12,7 +12,8 @@ $(window).scroll(function () {
 // Single nav function
 $("nav ul").singlePageNav({
     "offset": 30,
-    "updateHash": true
+    "updateHash": true,
+    "filter": ":not(.external)"
 });
 // Pop-up form funciton
 $('.form-box__close').click(function () {
@@ -60,17 +61,8 @@ $(document).ready(function () {
         ]
     });
 });
-// Registration button
-$('.header__title_button').click(function (e) {
-    $(window).scrollTo('#registration', 600, {
-        offset: {
-            top: -30
-        }
-    });
-    e.preventDefault();
-});
 // Ask organisators
-$('.ask, a.header__title_h2').click(function (e) {
+$('a.header__title_h2').click(function (e) {
     $(window).scrollTo('#contacts', 600, {
         offset: {
             top: -30
