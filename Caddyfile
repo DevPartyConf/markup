@@ -1,0 +1,13 @@
+http://www.devparty.ru, https://www.devparty.ru {
+	redir https://devparty.ru{uri}
+}
+
+https://devparty.ru {
+	root /var/www/it/devparty
+	gzip
+}
+
+http://2016.devparty.ru {
+	root /var/www/it/devparty/2016
+	gzip
+}

@@ -14,12 +14,20 @@ gulp.task('connect', function () {
 });
 
 gulp.task('jade', function () {
+    // 2017
     gulp.src('jade/*.jade')
         .pipe(jade({
             pretty: true
         }))
         .pipe(gulp.dest('dist'))
-        .pipe(connect.reload())
+        .pipe(connect.reload());
+    // 2016
+    gulp.src('jade/2016/*.jade')
+        .pipe(jade({
+            pretty: true
+        }))
+        .pipe(gulp.dest('dist/2016'))
+        .pipe(connect.reload());
 });
 
 gulp.task('stylus', function () {
