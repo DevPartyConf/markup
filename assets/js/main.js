@@ -60,6 +60,17 @@ $(document).ready(function () {
             }
         ]
     });
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 30,
+        centeredSlides: true,
+        nextButton: '.swiper-button-prev',
+        prevButton: '.swiper-button-next',
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+    });     
 });
 // Ask organisators
 $('a.header__title_h2').click(function (e) {

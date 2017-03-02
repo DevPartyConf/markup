@@ -35,6 +35,7 @@ header
   color white
 .head 
   height 113px
+  z-index 10
   .container 
     top 30px
     position relative
@@ -297,7 +298,7 @@ footer
   clearfix()
 .sticky
   background c-dark-blue
-  z-index 1
+  z-index 10
   position fixed
   width 100%
   top 0
@@ -647,3 +648,43 @@ a.talk
     border-bottom none
 span.italic
   font-style italic
+
+.swiper-block
+  overflow hidden
+  .btn-center
+    text-align center
+  .button
+    background c-red
+.swiper-container
+  width 100%
+  height 310px
+  overflow visible
+.swiper-slide 
+  position relative
+.swiper-slide-prev:after,
+.swiper-slide-next:after
+  content ''
+  display block
+  position absolute
+  top 0
+  left 0
+  width 100%
+  height 100%
+  background-color rgba(255, 255, 255, 0.67)
+.swiper-button-prev,
+.swiper-button-next
+  width 22px
+  height 32px
+  -webkit-background-size auto
+  background-size auto
+.swiper-button-prev
+  background-image url(../img/slider-prev.png)
+.swiper-button-next
+  background-image url(../img/slider-next.png)
+.swiper-container-horizontal>.swiper-pagination-bullets
+  bottom -25px
+.swiper-pagination-bullet
+  background-color #0081d0
+  opacity 1
+.swiper-pagination-bullet-active
+  background-color #ff0066
