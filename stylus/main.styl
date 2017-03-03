@@ -560,58 +560,6 @@ h2#speakers, h2#registration
   height: 525px;
 }
 
-@media screen and (max-width: 1050px)
-{
-  .content-box__h { padding: 30px 0 0; }
-  .time, .desc
-  {
-    float: none;
-    width: 90%;
-    margin: 0 auto;
-    padding: 15px 0;
-  }
-
-  .time { padding-bottom: 0; }
-}
-
-@media screen and (max-width: 700px)
-{
-  #program_headers { width: 255px; }
-  #program_headers .qa { clear: both; }
-
-  #program_headers .qa, #program_headers .management{ margin-top: 2px; }
-  #program_headers .qa { width: 27%; }
-  #program_headers .management { width: 56%; }
-}
-
-@media screen and (max-width: 500px)
-{
-  .section { 
-    float: none; width: 100%; 
-  }
-  .desc { 
-    font-size: 1.2em; 
-  }
-  .content-box__h, .content-box__h2 { 
-    font-size: 3em; 
-  }
-  .content-box_white { 
-    width: 280px; 
-  }
-  #program_headers { 
-    width: 180px; 
-  }
-  .p_head {
-    float: none;
-    width: 100% !important;
-    padding: 0;
-  }
-  .swiper-slide-prev:after,
-  .swiper-slide-next:after {
-    display: none !important;
-  }
-}
-.clear { clear: both; }
 
 h3.content-box__h3
   margin-bottom: 10px
@@ -673,9 +621,6 @@ span.italic
     text-align center
   .button
     background c-red
-.swiper-container
-  width 100%
-  overflow visible
 .swiper-slide 
   position relative
   img
@@ -693,14 +638,6 @@ span.italic
   width 100%
   height 100%
   background-color rgba(255, 255, 255, 0.67)
-.swiper-slide-active
-  img
-    border 4px solid #fff
-    border-radius 4px
-    margin-top -2px
-    margin-left -2px
-    -webkit-box-shadow 0 1px 6px rgba(0,0,0,0.2)
-    box-shadow 0 1px 6px rgba(0,0,0,0.2)
 .swiper-button-prev,
 .swiper-button-next
   width 22px
@@ -718,11 +655,44 @@ span.italic
   opacity 1
 .swiper-pagination-bullet-active
   background-color #ff0066
+.swiper-how,
+.swiper-partner
+  position relative
+  width 100%
+.swiper-how
+  margin-bottom 20px
+  overflow visible
+  .swiper-slide-active
+    img
+      border 4px solid #fff
+      border-radius 4px
+      margin-top -2px
+      margin-left -2px
+      -webkit-box-shadow 0 1px 6px rgba(0,0,0,0.2)
+      box-shadow 0 1px 6px rgba(0,0,0,0.2)
+.swiper-partner
+  display none
+  padding 0 35px 25px
+  overflow hidden
+  .swiper-button-prev,
+  .swiper-button-next
+    margin-top -20px
+    width 12px
+    height 21px
+  .swiper-button-prev
+    left 0
+    background-image url(../img/slider-prev-light.png)
+  .swiper-button-next
+    right 0
+    background-image url(../img/slider-next-light.png)
+  &.swiper-container-horizontal>.swiper-pagination-bullets
+    bottom 0
+
 
 .content-box_partner
   margin-bottom 30px
 .partner__list
-  margin 0 -10px
+  margin 10px -10px
   text-align center
 .partner__item
   display inline-block
@@ -736,7 +706,7 @@ span.italic
 .manager__item
   position relative
   display inline-block
-  margin 0 30px
+  margin 0 30px 25px
   width 199px
   text-align left
   color #fff
@@ -753,3 +723,67 @@ span.italic
       display block
 .manager__item:nth-child(2n)
   top 50px
+  
+
+@media screen and (max-width: 1200px)
+{
+  .manager__list {
+    margin-top: 20px;
+  }
+  .manager__item {
+    top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1050px)
+{
+  .content-box__h { padding: 30px 0 0; }
+  .time, .desc
+  {
+    float: none;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
+
+  .time { padding-bottom: 0; }
+}
+
+@media screen and (max-width: 700px)
+{
+  #program_headers { width: 255px; }
+  #program_headers .qa { clear: both; }
+
+  #program_headers .qa, #program_headers .management{ margin-top: 2px; }
+  #program_headers .qa { width: 27%; }
+  #program_headers .management { width: 56%; }
+}
+
+@media screen and (max-width: 500px)
+{
+  .section { 
+    float: none; width: 100%; 
+  }
+  .desc { 
+    font-size: 1.2em; 
+  }
+  .content-box__h, .content-box__h2 { 
+    font-size: 3em; 
+  }
+  .content-box_white { 
+    width: 280px; 
+  }
+  #program_headers { 
+    width: 180px; 
+  }
+  .p_head {
+    float: none;
+    width: 100% !important;
+    padding: 0;
+  }
+  .swiper-slide-prev:after,
+  .swiper-slide-next:after {
+    display: none !important;
+  }
+}
+.clear { clear: both; }

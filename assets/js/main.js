@@ -31,7 +31,8 @@ $('.toggle-menu').click(function () {
     $('header').toggleClass('active');
 });
 // Speakers slider
-var mySwiper;
+var swiperHow,
+    swiperPartner;
 $(document).ready(function () {
     $('#responsive').lightSlider({
         item: 4,
@@ -62,7 +63,7 @@ $(document).ready(function () {
         ]
     });
 
-    mySwiper = new Swiper ('.swiper-container', {
+    swiperHow = new Swiper ('.swiper-how', {
         loop: true,
         slidesPerView: 2,
         spaceBetween: 30,
@@ -70,13 +71,13 @@ $(document).ready(function () {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         pagination: '.swiper-pagination',
-        paginationClickable: true,
+        paginationClickable: true
     });
-    $('.swiper-container').on('click', '.swiper-slide-next', function(){
-        mySwiper.slideNext();
+    $('.swiper-how').on('click', '.swiper-slide-next', function(){
+        swiperHow.slideNext();
     });
-    $('.swiper-container').on('click', '.swiper-slide-prev', function(){
-        mySwiper.slidePrev();
+    $('.swiper-how').on('click', '.swiper-slide-prev', function(){
+        swiperHow.slidePrev();
     }); 
 });
 // Ask organisators
@@ -146,21 +147,39 @@ function resizeProgram() {
 
         $('.spec-4').css('height', (parseInt($(block_9).css('height')) + parseInt($(block_10).css('height')) / 2) + 'px');
         $('.spec-5').css('height', (parseInt($(block_10).css('height')) / 2 + parseInt($(block_11).css('height'))) + 'px');
+
+        $('.partner__list').show();
+        $('.swiper-partner').hide();
     } else {
         $('.spec-space').css('margin-top', '0px');
 
         for (i = 1; i < 6; ++i)
             $('.spec-' + i).css('height', 'auto');
         
-        if (mySwiper != undefined) {
-            mySwiper.destroy();
-            mySwiper = new Swiper ('.swiper-container', {
+        if (swiperHow != undefined) {
+            swiperHow.destroy();
+            swiperHow = new Swiper ('.swiper-how', {
                 loop: true,
                 slidesPerView: 1,
                 centeredSlides: true,
-                nextButton: '.swiper-button-next',
-                prevButton: '.swiper-button-prev',
-                pagination: '.swiper-pagination',
+                nextButton: '.swiper-how .swiper-button-next',
+                prevButton: '.swiper-how .swiper-button-prev',
+                pagination: '.swiper-how .swiper-pagination',
+                paginationClickable: true,
+            }); 
+        }
+
+        $('.partner__list').hide();
+        $('.swiper-partner').show();
+        if(swiperPartner == undefined) {
+            swiperPartner = new Swiper ('.swiper-partner', {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 50,
+                centeredSlides: true,
+                nextButton: '.swiper-partner .swiper-button-next',
+                prevButton: '.swiper-partner .swiper-button-prev',
+                pagination: '.swiper-partner .swiper-pagination',
                 paginationClickable: true,
             }); 
         }
