@@ -9,7 +9,7 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel="stylesheet", href="css/lightslider.min.css")
     link(rel="stylesheet", href="css/swiper.min.css")
-    link(rel="stylesheet", href="css/main.css?v=3")
+    link(rel="stylesheet", href="css/main.css?v=4")
     link(rel='shortcut icon', href='favicon.ico')
     meta(property="og:url" content="https://devparty.ru")
     meta(property="og:title" content="Конференция разработчиков «DevParty» 2017")
@@ -113,9 +113,9 @@ html
                   a(href="https://vk.com/album-71152000_230341648" target="_blank").button.button_anim.header__title_button Перейти в альбом
             .content-box.content-box_white
               h2#schedule.content-box__h Программа
-              p.content-box__p Пока наполняется. Если вы хотите выступить с докладом, <br>
-                a.ask(href="https://docs.google.com/forms/d/e/1FAIpQLSf3nzaBcjR4Xz3kO0Qzyff2O4fQocoytQah-fpHs_Qoq3XzGg/viewform" target="_blank") заполните анкету спикера
-                |.
+              p.content-box__p Программа формируется. <br><br>
+              p.content-box__p.schedule
+                a.button(href="/talks.html") Список докладов
     section.section_dark
       .container
         .row
@@ -147,6 +147,9 @@ html
                 li.partner__item
                   a(href="http://izumrud-dolina.ru" target="_blank")
                     img(src='img/partners/iz_dolina.png')
+                li.partner__item
+                  a(href="http://hotwork.ru/" target="_blank")
+                    img(src='img/partners/hotwork.png')
               .swiper-partner
                 .swiper-wrapper
                   .swiper-slide 
