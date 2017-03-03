@@ -586,16 +586,29 @@ h2#speakers, h2#registration
 
 @media screen and (max-width: 500px)
 {
-  .section { float: none; width: 100%; }
-  .desc { font-size: 1.2em; }
-  .content-box__h, .content-box__h2 { font-size: 3em; }
-  .content-box_white { width: 280px; }
-  #program_headers { width: 180px; }
-  .p_head
-  {
+  .section { 
+    float: none; width: 100%; 
+  }
+  .desc { 
+    font-size: 1.2em; 
+  }
+  .content-box__h, .content-box__h2 { 
+    font-size: 3em; 
+  }
+  .content-box_white { 
+    width: 280px; 
+  }
+  #program_headers { 
+    width: 180px; 
+  }
+  .p_head {
     float: none;
     width: 100% !important;
     padding: 0;
+  }
+  .swiper-slide-prev:after,
+  .swiper-slide-next:after {
+    display: none !important;
   }
 }
 .clear { clear: both; }
@@ -662,10 +675,14 @@ span.italic
     background c-red
 .swiper-container
   width 100%
-  height 310px
   overflow visible
 .swiper-slide 
   position relative
+  img
+    width 100%
+.swiper-slide-prev:hover,
+.swiper-slide-next:hover 
+  cursor pointer
 .swiper-slide-prev:after,
 .swiper-slide-next:after
   content ''
@@ -676,6 +693,14 @@ span.italic
   width 100%
   height 100%
   background-color rgba(255, 255, 255, 0.67)
+.swiper-slide-active
+  img
+    border 4px solid #fff
+    border-radius 4px
+    margin-top -2px
+    margin-left -2px
+    -webkit-box-shadow 0 1px 6px rgba(0,0,0,0.2)
+    box-shadow 0 1px 6px rgba(0,0,0,0.2)
 .swiper-button-prev,
 .swiper-button-next
   width 22px

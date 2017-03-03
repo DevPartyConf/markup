@@ -31,6 +31,7 @@ $('.toggle-menu').click(function () {
     $('header').toggleClass('active');
 });
 // Speakers slider
+var mySwiper;
 $(document).ready(function () {
     $('#responsive').lightSlider({
         item: 4,
@@ -61,16 +62,22 @@ $(document).ready(function () {
         ]
     });
 
-    var mySwiper = new Swiper ('.swiper-container', {
+    mySwiper = new Swiper ('.swiper-container', {
         loop: true,
         slidesPerView: 2,
         spaceBetween: 30,
         centeredSlides: true,
-        nextButton: '.swiper-button-prev',
-        prevButton: '.swiper-button-next',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         pagination: '.swiper-pagination',
         paginationClickable: true,
-    });     
+    });
+    $('.swiper-container').on('click', '.swiper-slide-next', function(){
+        mySwiper.slideNext();
+    });
+    $('.swiper-container').on('click', '.swiper-slide-prev', function(){
+        mySwiper.slidePrev();
+    }); 
 });
 // Ask organisators
 $('a.header__title_h2').click(function (e) {
@@ -144,5 +151,18 @@ function resizeProgram() {
 
         for (i = 1; i < 6; ++i)
             $('.spec-' + i).css('height', 'auto');
+        
+        if (mySwiper != undefined) {
+            mySwiper.destroy();
+            mySwiper = new Swiper ('.swiper-container', {
+                loop: true,
+                slidesPerView: 1,
+                centeredSlides: true,
+                nextButton: '.swiper-button-next',
+                prevButton: '.swiper-button-prev',
+                pagination: '.swiper-pagination',
+                paginationClickable: true,
+            }); 
+        }
     }
 }
