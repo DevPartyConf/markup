@@ -127,7 +127,7 @@ function resizeProgram() {
             var blockOfSec2 = $('#sec-2').children(".block")[i];
             var heightOfSec1BlockDesc = parseInt($(blockOfSec1).children(".desc").css('height'));
             var heightOfSec2BlockDesc = parseInt($(blockOfSec2).children(".desc").css('height'));
-            if (heightOfSec1BlockDesc>heightOfSec2BlockDesc){
+            if (heightOfSec1BlockDesc > heightOfSec2BlockDesc){
                 $(blockOfSec2).css('height',$(blockOfSec1).css('height'));
                 $(blockOfSec1).css('height', 'auto');
             }else{
