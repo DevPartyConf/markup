@@ -118,43 +118,30 @@ $(function(){
 $(window).resize(resizeProgram);
 
 function resizeProgram() {
-    var height = 0;
-
     if ($(window).width() > 483) {
-        $('#sec-1').children(".block").each(function (index) {
-            if (index < 6) {
-                height += parseInt($(this).css('height')) + parseInt($(this).css('margin-top'));
-            }
-        });
-
-        $('.spec-space').css('margin-top', (height + 1) + 'px');
-
-        for (i = 1; i < 4; ++i) {
-            var block = $('#sec-1').children(".block")[i + 5];
-
-            if (parseInt($(block).children(".desc").css('height')) > parseInt($('.spec-' + i + ' .desc').css('height'))) {
-                $('.spec-' + i).css('height', $(block).css('height'));
-                $(block).css('height', 'auto');
-            } else {
-                $('.spec-' + i).css('height', 'auto');
-                $(block).css('height', $('.spec-' + i).css('height'));
+        var welcomeBlock = $('#sec-1 .block').first();
+        var sec2firstBlockMargin = parseInt($(welcomeBlock).css('height')) + parseInt($(welcomeBlock).css('margin-top'))+1;
+        $('.spec-space').css('margin-top', sec2firstBlockMargin + 'px');
+        for (i = 0; i < 17; ++i) {
+            var blockOfSec1 = $('#sec-1').children(".block")[i+1];
+            var blockOfSec2 = $('#sec-2').children(".block")[i];
+            var heightOfSec1BlockDesc = parseInt($(blockOfSec1).children(".desc").css('height'));
+            var heightOfSec2BlockDesc = parseInt($(blockOfSec2).children(".desc").css('height'));
+            if (heightOfSec1BlockDesc > heightOfSec2BlockDesc){
+                $(blockOfSec2).css('height',$(blockOfSec1).css('height'));
+                $(blockOfSec1).css('height', 'auto');
+            }else{
+                $(blockOfSec1).css('height',$(blockOfSec2).css('height'));
+                $(blockOfSec2).css('height', 'auto');
             }
         }
-
-        var block_9 = $('#sec-1').children(".block")[9];
-        var block_10 = $('#sec-1').children(".block")[10];
-        var block_11 = $('#sec-1').children(".block")[11];
-
-        $('.spec-4').css('height', (parseInt($(block_9).css('height')) + parseInt($(block_10).css('height')) / 2) + 'px');
-        $('.spec-5').css('height', (parseInt($(block_10).css('height')) / 2 + parseInt($(block_11).css('height'))) + 'px');
-
+        
         $('.partner__list').show();
         $('.swiper-partner').hide();
     } else {
         $('.spec-space').css('margin-top', '0px');
-
-        for (i = 1; i < 6; ++i)
-            $('.spec-' + i).css('height', 'auto');
+        $('#sec-1 .block').css('height','auto');
+        $('#sec-2 .block').css('height','auto');
         
         if (swiperHow != undefined) {
             swiperHow.destroy();
@@ -168,7 +155,6 @@ function resizeProgram() {
                 paginationClickable: true,
             }); 
         }
-
         $('.partner__list').hide();
         $('.swiper-partner').show();
         if(swiperPartner == undefined) {
