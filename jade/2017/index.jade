@@ -1,0 +1,675 @@
+doctype
+html
+  head
+    title Конференция разработчиков «DevParty» 2017
+    meta(name='description' content="Приглашаем Вас принять участие в конференции разработчиков Dev Party 2017 в Вологде")
+    meta(name='keywords' content="devparty 2017 конференция разработчиков вологда")
+    meta(charset='utf-8')
+    meta(http-equiv="Cache-Control" content="no-cache")
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel="stylesheet", href="css/lightslider.min.css")
+    link(rel="stylesheet", href="css/swiper.min.css")
+    link(rel="stylesheet", href="css/main.css?v=5")
+    link(rel='shortcut icon', href='favicon.ico')
+    meta(property="og:url" content="https://devparty.ru")
+    meta(property="og:title" content="Конференция разработчиков «DevParty» 2017")
+    meta(property="og:description" content="Смотри в оба! Конференция «DevParty» 2017 пройдёт 25 марта в Кооперативном Колледже. Начало в 10 часов.")
+    meta(property="og:image" content="https://devparty.ru/img/logo/logo.png")
+  body
+    section#index
+      .year
+        .container
+          .row
+            .col-lg-12
+              .menu
+                ul
+                  li.menu__title
+                    a.menu__link.menu__link_blue.menu__link_current(href="/") 2017
+                  li.menu__title
+                    a.menu__link.menu__link_blue(href="http://2016.devparty.ru") 2016
+                  li.menu__title
+                    a.menu__link.menu__link_blue.disabled(href="#") 2015
+                  li.menu__title
+                    a.menu__link.menu__link_blue(href="http://web.archive.org/web/20141218144201/http://webdevconf.ru/" target="_blank") 2014
+                  li.menu__title
+                    a.menu__link.menu__link_blue(href="http://www.2013.webdevconf.ru/" target="_blank") 2013
+      header
+        .head
+          .container
+            .row
+              button.toggle-menu
+                .toggle-menu__sandwitch
+                  span.sw-topper
+                  span.sw-bottom
+                  span.sw-footer
+              .col-md-3.col-sm-1
+                a(href="#index").logo
+              nav.col-md-9.col-sm-11
+                ul.nav
+                  li.nav__title
+                    a.nav__link(href="#schedule") Программа
+                  li.nav__title
+                    a.nav__link(href="#testimonials") Отзывы
+                  li.nav__title
+                    a.nav__link(href="#contacts") Контакты
+                  li.nav__title
+                    a.nav__link.external(href="https://drive.google.com/open?id=0ByTU_wlikj-yUHNRdUk3Q1RnWUE" target="_blank") Для спонсоров
+        .container
+          .row
+            .col-lg-12
+              .header__title
+                h1.header__title__h Dev 
+                  span.header__title__h_red party
+                 h2.header__title_h2
+                   | 25 марта в&nbsp;
+                   a(href="#").header__title_h2 Вологде
+                <br>
+                .socials.socials_bottom
+                  ul
+                    li.socials__title
+                      a.socials__vk(href="https://vk.com/devparty_conf" target="_blank")
+                    li.socials__title
+                      a.socials__facebook(href="https://www.facebook.com/devparty" target="_blank")
+                    li.socials__title
+                      a.socials__twitter(href="https://twitter.com/devparty_conf" target="_blank")
+                    li.socials__title
+                      a.socials__youtube(href="https://www.youtube.com/channel/UClZl8d7-zRequR1MVlRPT7A/" target="_blank")
+                    li.socials__title
+                      a.socials__github(href="https://github.com/DevPartyConf/markup" target="_blank")
+    section.section_blue
+      .container
+        .row
+          .col-lg-12
+            .content-box-2
+              h2.content-box__h2 О конференции
+              p.content-box__p2
+                | V конференция разработчиков DevParty состоялась в Вологде 25 марта.<br/\> DevParty 2017 собрала более 300 участников — это в 2 раза больше количества посетителей конференции 2016 года.<br><br>
+                | Из 19 докладов конференции 7 были прочитаны московскими гостями и 4 — гостями из Санкт-Петербурга, Ярославля, Нижнего Новгорода и Череповца. DevParty 2017 охватила широкий спектр тем — от GameDev-a, представленного компаниями Playrix и Broccoli Games, до мобильной разработки, современных тенденций в разработке программного обеспечения и вопросов мотивации, личной и корпоративной эффективности. <br><br>
+                | Фотоотчёт и все материалы конференции выложены на сайте. <br>
+                | До встречи на DevParty 2018!
+              .swiper-block
+                h2.content-box__h2 Как это было в 2017
+                .swiper-how
+                  .swiper-wrapper
+                    .swiper-slide 
+                      img(src='img/slides/07.jpg')
+                    .swiper-slide 
+                      img(src='img/slides/08.jpg')
+                    .swiper-slide 
+                      img(src='img/slides/09.jpg')
+                    .swiper-slide
+                      img(src='img/slides/10.jpg')
+                    .swiper-slide
+                      img(src='img/slides/11.jpg')
+                    .swiper-slide
+                      img(src='img/slides/12.jpg')
+                    .swiper-slide
+                      img(src='img/slides/13.jpg')
+                  .swiper-button-prev
+                  .swiper-button-next
+                  .swiper-pagination
+                .btn-center
+                  a(href="https://vk.com/album-71152000_242820213" target="_blank").button.button_anim.header__title_button Перейти в альбом
+            .content-box.content-box_white.schedule
+              h2#schedule.content-box__h Программа
+              .section              
+                p.room.bordered
+                  .time 09:00 – 10:00
+                  .desc
+                    | Регистрация, welcome-кофе
+                  .clear
+              .clear
+              #sec-1.section
+                p.room.bordered 1 зал
+                .clear
+                .block
+                  .time 10:00 – 10:20
+                  .desc
+                    | Открытие. Приветствие участников конференции
+                  .clear
+                .block.software
+                  .time 10:30 – 11:00
+                  .desc
+                    a.talk(href="talks.html#talk-13") Percona Server for MongoDB: обзор возможностей
+                    .program-materials
+                      a(href='https://youtu.be/KBBZzg118Qw' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/percona-percona-server-for-mongodb' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Денис Противенский, 
+                    span.company Percona
+                  .clear
+                .block.time-break
+                  .time 11:00 – 11:10
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 11:10 – 11:40
+                  .desc
+                    a.talk(href="talks.html#talk-15") Чатбот для подсказки ответов на вопросы — новейшие алгоритмы, нейронные сети, промышленная Java и большие нагрузки
+                    .program-materials
+                      a(href='https://youtu.be/cMx8I2sUOa4' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/1-java-73665718' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Александр Сербул, 
+                    span.company 1С-Битрикс
+                  .clear
+                .block.time-break
+                  .time 11:40 – 11:50
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 11:50 – 12:20
+                  .desc
+                    a.talk(href="talks.html#talk-18") RabbitMQ. Насколько ценен мех и вкусно мясо?
+                    .program-materials
+                      a(href='https://youtu.be/BURZd5ozLCg' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/rabbitmq-73665882' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Сергей Яркин,  
+                    span.company Тензор
+                  .clear
+                .block.time-break
+                  .time 12:20 – 12:30
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 12:30 – 13:00
+                  .desc
+                    a.talk(href="talks.html#talk-17") Документация? Не слышал
+                    .program-materials
+                      a(href='https://youtu.be/NGiN3df_YGc' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/notamedia-73665774' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Игорь Цупко, 
+                    span.company Notamedia
+                  .clear
+                .block.time-break
+                  .time 13:00 – 14:00
+                  .desc
+                    | Обед
+                  .clear
+                .block.software
+                  .time 14:00 – 14:30
+                  .desc
+                    a.talk(href="talks.html#talk-9") Backend игрового проекта
+                    .program-materials
+                      a(href='https://youtu.be/LQvkGClVJ5A' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/broccoli-games-backend' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Сергей Мезенев, 
+                    span.company Broccoli Games
+                  .clear
+                .block.time-break
+                  .time 14:30 – 14:40
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 14:40 – 15:10
+                  .desc
+                    a.talk(href="talks.html#talk-7") Продвижение мобильных приложений: Deep Dive
+                    .program-materials
+                      a(href='https://youtu.be/Br_zyL-Ch5A' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/playrix-deep-dive' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Анна Крижановская, 
+                    span.company Playrix
+                  .clear
+                .block.time-break
+                  .time 15:10 – 15:20
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 15:20 – 15:50
+                  .desc
+                    a.talk(href="talks.html#talk-10") ClickHouse — ускоряем аналитические SQL-запросы при помощи новой колоночной СУБД от Яндекса
+                    .program-materials
+                      a(href='https://youtu.be/z9qY19yjSwY' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/informika-clickhouse-sql' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Александр Мочалыгин, 
+                    span.company Informika
+                  .clear
+                .block.time-break
+                  .time 15:50 – 16:30
+                  .desc
+                    | Кофе-брейк
+                  .clear
+                .block.software
+                  .time 16:30 – 17:00
+                  .desc
+                    a.talk(href="talks.html#talk-12") Корпоративный хостинг на Docker
+                    .program-materials
+                      a(href='https://youtu.be/qy7hCOjWyGc' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/docker-73665500' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Анатолий Полицын, 
+                    span.company агентство интернет-маркетинга «Синапс»
+                  .clear
+                .block.time-break
+                  .time 17:00 – 17:10
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 17:10 – 17:40
+                  .desc
+                    a.talk(href="talks.html#talk-19") Современные тенденции в разработке программного обеспечения
+                    .program-materials
+                      a(href='https://youtu.be/8UvCiYxUfZA' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/git-in-sky-73665839' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name  Александр Чистяков, 
+                    span.company Git in Sky
+                  .clear
+                .block.time-break
+                  .time 17:40 – 17:50
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 17:50 – 18:20
+                  .desc
+                    a.talk(href="talks.html#talk-11") Путь питониста, или Как мы перезапускали открытые данные в России
+                    .program-materials
+                      a(href='https://youtu.be/8KTVf-k-BRY' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/ss-73665446' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Елена Никитина, 
+                    span.company Аналитический центр при Правительстве РФ
+                  .clear
+                .block
+                  .time 18:20 – 18:30
+                  .desc
+                    | Закрытие конференции
+                  .clear
+                .block.bordered
+                  .time 19:30
+                  .desc
+                    | AfterDevParty в #[a(href="https://vk.com/hardigardi" target="_blank") ХАРДИ ГАРДИ]
+                  .clear
+              #sec-2.section
+                p.room.bordered 2 зал
+                .clear
+                .block.software.spec-space.spec-1
+                  .time 10:30 – 11:00
+                  .desc
+                    a.talk(href="talks.html#talk-6") Как скоро SkyNet захватит мир?
+                    .program-materials
+                      a(href='https://youtu.be/9FYTYU_yk7Y' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/universal-software-skynet' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Игорь Косулин, 
+                    span.company Universal Software
+                  .clear
+                .block.time-break
+                  .time 11:00 – 11:10
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 11:10 – 11:40
+                  .desc
+                    a.talk(href="talks.html#talk-1") Кросс-платформенная разработка мобильных приложений на Xamarin, так ли это страшно?
+                    .program-materials
+                      a(href='https://youtu.be/Gq01JDcrpms' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://drive.google.com/open?id=0B2nE9jqyBy-CTlRUTUJBWHZSQ2M' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Александр Алексеев
+                  .clear
+                .block.time-break
+                  .time 11:40 – 11:50
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 11:50 – 12:20
+                  .desc
+                    a.talk(href="talks.html#talk-14") Feel at Home в на 90% распределённой компании: как удержать сотрудника-удалёнщика?
+                    .program-materials
+                      a(href='https://youtu.be/6HfaoxLNMCQ' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/percona-feel-at-home-90' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Анастасия Распопина, 
+                    span.company Percona
+                  .clear
+                .block.time-break
+                  .time 12:20 – 12:30
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 12:30 – 13:00
+                  .desc
+                    a.talk(href="talks.html#talk-8") Создание кроссплатформенного игрового приложения на Haxe
+                    .program-materials
+                      a(href='https://youtu.be/rW0WaL57jgo' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/broccoli-games-haxe' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Сергей Мезенев, 
+                    span.company Broccoli Games
+                  .clear
+                .block.time-break
+                  .time 13:00 – 14:00
+                  .desc
+                    | Обед
+                  .clear
+                .block.software
+                  .time 14:00 – 14:30
+                  .desc
+                    a.talk(href="talks.html#talk-4") Статистические предсказания игровой активности
+                    .program-materials
+                      a(href='https://youtu.be/HaNGschblOo' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/playrix-73664998' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Игорь Иванов, 
+                    span.company Playrix
+                  .clear
+                .block.time-break
+                  .time 14:30 – 14:40
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 14:40 – 15:10
+                  .desc
+                    a.talk(href="talks.html#talk-16") Облачный сервис персональных рекомендаций для 20 000 магазинов — алгоритмы и технологии
+                    .program-materials
+                      a(href='https://youtu.be/ehPI79ffMeY' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/1-20-000' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Александр Сербул, 
+                    span.company 1С-Битрикс
+                  .clear
+                .block.time-break
+                  .time 15:10 – 15:20
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 15:20 – 15:50
+                  .desc
+                    a.talk(href="talks.html#talk-5") Самокапитализация программиста. Как повысить свою стоимость на рынке труда
+                    .program-materials
+                      a(href='https://youtu.be/GwbhIsfT_6o' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/ss-73665089' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Денис Каленбет, 
+                    span.company АО «Эр-Стайл Софтлаб»
+                  .clear
+                .block.time-break
+                  .time 15:50 – 16:30
+                  .desc
+                    | Кофе-брейк
+                  .clear
+                .block.software
+                  .time 16:30 – 17:00
+                  .desc
+                    a.talk(href="talks.html#talk-3") Идеальный программист
+                    .program-materials
+                      a(href='https://youtu.be/SWYs3aC0XJo' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/33-73664931' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Владимир Варнавский, 
+                    span.company интернет-студия «33 Кита»
+                  .clear
+                .block.time-break
+                  .time 17:00 – 17:10
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 17:10 – 17:40
+                  .desc
+                    a.talk(href="talks.html#talk-2") Основы тестирования и примеры использования базовых техник тест дизайна в тестировании мобильных игр
+                    .program-materials
+                      a(href='https://youtu.be/XEq_FAAbq_4' target="_blank")
+                        img(src="../img/talks/video.png", alt="Видео" title="Видео")
+                      a(href='https://www.slideshare.net/Dev_Party/playrix-73664739' target="_blank")
+                        img(src="../img/talks/slides.png", alt="Презентация" title="Презентация")
+                    br
+                    span.name Андрей Валдуев, 
+                    span.company Playrix
+                  .clear
+              .clear
+    section.section_dark
+      .container
+        .row
+          .col-lg-12
+            .content-box.content-box_partner
+              h2#partners.content-box__h Партнеры
+              ul.partner__list
+                li.partner__item
+                  a(href="http://unvsoft.com" target="_blank")
+                    img(src='img/partners/unisoft.png')
+                li.partner__item
+                  a(href="http://rcpp35.ru/" target="_blank")
+                    img(src='img/partners/rcpp.png')
+                li.partner__item
+                  a(href="https://smmbox.com" target="_blank")
+                    img(src='img/partners/smmbox.png')
+                li.partner__item
+                  a(href="https://vk.com/broccoligames" target="_blank")
+                    img(src='img/partners/bgg.png')
+                li.partner__item
+                  a(href="http://www.playrix.ru/" target="_blank")
+                    img(src='img/partners/playrix.png')
+                li.partner__item
+                  a(href="http://vkk.edu.ru/" target="_blank")
+                    img(src='img/partners/college.png')
+                li.partner__item
+                  a(href="http://pgday.ru/ru/2017?utm_source=partner&utm_medium=banner&utm_campaign=dev_party" target="_blank")
+                    img(src='img/partners/pgday.png')
+                li.partner__item
+                  a(href="http://izumrud-dolina.ru" target="_blank")
+                    img(src='img/partners/iz_dolina.png')
+                li.partner__item
+                  a(href="http://vologda.trud.com" target="_blank")
+                    img(src='img/partners/trud.png')
+                li.partner__item
+                  a(href="https://88005500600.ru/vologda/company/job/" target="_blank")
+                    img(src='img/partners/pizzafabrica.png')
+                li.partner__item
+                  a(href="https://88005500600.ru/vologda/company/job/" target="_blank")
+                    img(src='img/partners/pizzasoft.png')
+              .swiper-partner
+                .swiper-wrapper
+                  .swiper-slide 
+                    img(src='img/partners/unisoft.png')
+                  .swiper-slide 
+                    img(src='img/partners/rcpp.png')                  
+                  .swiper-slide 
+                    img(src='img/partners/smmbox.png')
+                  .swiper-slide 
+                    img(src='img/partners/bgg.png')
+                  .swiper-slide
+                    img(src='img/partners/pgday.png')
+                  .swiper-slide 
+                    img(src='img/partners/playrix.png')
+                  .swiper-slide 
+                    img(src='img/partners/college.png')
+                  .swiper-slide 
+                    img(src='img/partners/iz_dolina.png')
+                  .swiper-slide
+                    img(src='img/partners/trud.png')
+                  .swiper-slide
+                    img(src='img/partners/pizzafabrica.png')
+                  .swiper-slide
+                    img(src='img/partners/pizzasoft.png')
+                .swiper-button-prev
+                .swiper-button-next
+                .swiper-pagination
+    section.section_blue
+      .map-box#contacts
+        .map-box__yandex
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=UzMmjjh0OFNvJmWOiDeM8VSJ29NYlQr8&amp;height=444&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        .map-box__adress
+          .container
+            .row
+              .col-lg-12
+                .map-box__contact
+                  h3.map-box__h Место проведения
+                  ul
+                    li.map-box__li Вологда,
+                    li.map-box__li ул. Горького, д.93
+                    li.map-box__li «Вологодский Кооперативный Колледж»
+                  h4 Контакты
+                  div.contacts
+                    a(href="tel:+7-911-504-33-16") +7-911-504-33-16
+                    br
+                    a(href="mailto:olesya@devparty.ru") olesya@devparty.ru
+    section.section_blue
+      .container
+        .row
+          .col-lg-12
+            .content-box.content-box_m
+              h2#testimonials.content-box__h Отзывы
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Отличная конференция, было очень интересно, с нетерпением жду следующего года.
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Это первая конференция такого плана для меня. Крайне полезный опыт хотя бы в плане общего развития, достаточно интересные темы, в большинстве своем. Не обошлось, конечно, без бесполезных бравадных докладов (рэббит, опендата), но это малая кровь. Развивайтесь и дальше, особенно поддерживаю идею разделения на 2 аудитории - крайне удобно выбирать тему по душе. Да, можно желать услышать параллельно идущие доклады, но я надеюсь, что в скором времени появятся видео записи и файлы презентаций. Огромное спасибо за организацию подобных мероприятий товарищам, которые явно делают это на огромной личной инициативе. С большим удовольствием посещал бы подобные митапы чаще раза в год! Продолжу следить за данной темой.
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Вы молодцы!
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Вообще конференция была очень крутая, фотки выкладывались в режиме реального времени что вообще отлично. Доклады интересные, кофе-брейки вообще на высоте, я столько пиццы никогда не видел, стенд у Playrix отличный и ребята общительные. Поиграл пообщался и поел, все не отходя от их стола :)
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Благодарю организаторов DevParty за мероприятие с потрясающе высоким для провинции уровнем организации! Было очень много продуктивного и позитивного общения, интересные доклады и отличные вопросы к ним. Роста, развития, процветания вам, ребята - вы делаете хорошее дело!
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Все было супер! Спасибо организаторам!
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Всё понравилось! Спасибо ещё раз за возможность поучаствовать.
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Понравилась очень домашняя атмосфера и добродушное отношение.
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Молодцы! Конференция вышла на качественно новый уровень по сравнению с предыдущими годами.
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Все очень понравилось, есть желание приходить сюда еще. Большое спасибо за такую возможность.
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Организация, тайминг, спикеры, темы - всё на высшем уровне! Приятно удивляете каждый год! Молодцы!
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Показалась слабая компетенция некоторых докладчиков.
+              span.content-box__autor Участник
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Отличные доклады, очень хотелось бы хотя бы пару докладов направленных конкретно на обучение, чтобы ожидалось что туда придут шокльники и студенты. Еще было бы круто если бы присутствовала какая то интерактивность на стендах в перерывах, и для тех кто хочет просто ознакомиться с продуктами компаний, и для тех кто хочет устроиться в одну из них.
+              span.content-box__autor Участник              
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Все было замечательно, все посещенные доклады полезные и интересные. Время потрачено не зря.
+              span.content-box__autor Участник              
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Отличная большая конфа, очень понравилась :) надеюсь, в следующем году она будет раза в полтора больше и с участниками (слушателями) из многих других регионов.
+              span.content-box__autor Участник              
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Организаторы - большие молодцы. Я впервые присутствовала на подобном мероприятии, и мне очень понравилось. Одним из моих комментариев друзьям по поводу конференции была фраза "Зря сами не сходили". Из негативного только то, что мне не хватало свободного пространства на кофе-брейках. А в целом всё очень хорошо. Продолжайте и дальше в таком духе.
+              span.content-box__autor Участник              
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Была на конференции впервые, приятно удивили! Доклады содержательные, все во время, атмосфера доброжелательная. Очень круто, приду ещё!
+              span.content-box__autor Участник              
+            .content-box.content-box_m
+              p.content-box__p.content-box__p_white Очень понравилось побывать на этой конференции. Было очень интересно и увлекательно.
+              span.content-box__autor Участник              
+
+    section.section_blue
+      .container.mails__list
+        h2#mails.content-box__h Контакты
+        .row.content-box__p2
+          .col-md-3.mail__item
+            h3 Программа
+            a(href="mailto:program@devparty.ru") program@devparty.ru
+          .col-md-3.mail__item
+            h3 Спонсоры
+            a(href="mailto:sponsors@devparty.ru") sponsors@devparty.ru
+          .col-md-3.mail__item
+            h3 Сайт
+            a(href="mailto:site@devparty.ru") site@devparty.ru
+          .col-md-3.mail__item
+            h3 Вопросы
+            a(href="mailto:questions@devparty.ru") questions@devparty.ru
+    footer
+      .container
+        .footer__box
+          .row
+            .col-md-6.col-sm-6
+              ul
+                li
+                  | © DevParty,
+                  | 2017
+                li
+                  | Дизайн —
+                  noindex
+                    a(href="http://noonki.org/" target="_blank" rel="nofollow") Круглова Ольга
+                li
+                  | Верстка —
+                  noindex
+                    a(href="http://new-level.by" target="_blank" rel="nofollow") New-level
+            .col-md-6.col-sm-6.right
+              span.dev
+              ul.socials
+                li.socials__title
+                  a.socials__vk.socials__vk_black(href="https://vk.com/devparty_conf" target="_blank")
+                li.socials__title
+                  a.socials__facebook.socials__facebook_black(href="https://www.facebook.com/devparty" target="_blank")
+                li.socials__title
+                  a.socials__twitter.socials__twitter_black(href="https://twitter.com/devparty_conf" target="_blank")
+                li.socials__title
+                  a.socials__youtube.socials__youtube_black(href="https://www.youtube.com/channel/UClZl8d7-zRequR1MVlRPT7A/" target="_blank")
+                li.socials__title
+                  a.socials__github.socials__github_black(href="https://github.com/DevPartyConf/markup" target="_blank")
+    noindex <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    noindex <script src="//cdn.jsdelivr.net/jquery.scrollto/2.1.2/jquery.scrollTo.min.js"></script>
+    script(src='js/jquery.singlePageNav.min.js')
+    script(src='js/lightslider.min.js')
+    script(src='js/swiper.jquery.min.js')
+    script(src='js/main.js?v=2')
+    <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter36119605 = new Ya.Metrika({ id:36119605, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/36119605" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+    script (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-75226628-1', 'auto');ga('send', 'pageview');

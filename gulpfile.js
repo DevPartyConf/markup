@@ -14,12 +14,20 @@ gulp.task('connect', function () {
 });
 
 gulp.task('jade', function () {
-    // 2017
+    // 2018
     gulp.src('jade/*.jade')
         .pipe(jade({
             pretty: true
         }))
         .pipe(gulp.dest('dist'))
+        .pipe(connect.reload());
+
+    // 2017
+    gulp.src('jade/2017/*.jade')
+        .pipe(jade({
+            pretty: true
+        }))
+        .pipe(gulp.dest('dist/2017'))
         .pipe(connect.reload());
     // 2016
     gulp.src('jade/2016/*.jade')
