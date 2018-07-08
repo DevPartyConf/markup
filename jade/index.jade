@@ -48,8 +48,10 @@ html
                 a(href="#index").logo
               nav.col-md-9.col-sm-11
                 ul.nav
+                  //- li.nav__title
+                  //-   a.nav__link(href="#schedule") Подать доклад
                   li.nav__title
-                    a.nav__link(href="#schedule") Подать доклад
+                    a.nav__link(href="#cfp") Подать доклад
                   //- li.nav__title
                     a.nav__link(href="#testimonials") Отзывы
                   li.nav__title
@@ -112,15 +114,20 @@ html
                   .swiper-pagination
                 .btn-center
                   a(href="https://vk.com/album-71152000_242820213" target="_blank").button.button_anim.header__title_button Перейти в альбом
-            .content-box.content-box_white.schedule
-              h2#schedule.content-box__h Приём докладов
-              p.content-box__p Если вы хотите выступить с докладом, ознакомьтесь с #[a(href="/for-speakers.html" target="_blank") информацией для докладчиков] и <br/>
+            .content-box.content-box_white
+              h2#cfp.content-box__h Доклады принимаются до 15 августа
+              p.content-box__p Если вы хотите выступить с докладом, ознакомьтесь с #[a(href="/for-speakers.html" target="_blank") информацией для докладчиков] и &nbsp;
                 a.ask(href="https://docs.google.com/forms/d/e/1FAIpQLSf3nzaBcjR4Xz3kO0Qzyff2O4fQocoytQah-fpHs_Qoq3XzGg/viewform" target="_blank") заполните анкету спикера
                 |.
-    //- section.section_blue
+            //- .content-box.content-box_white.schedule
+            //-   h2#schedule.content-box__h Приём докладов
+            //-   p.content-box__p Если вы хотите выступить с докладом, ознакомьтесь с #[a(href="/for-speakers.html" target="_blank") информацией для докладчиков] и <br/>
+            //-     a.ask(href="https://docs.google.com/forms/d/e/1FAIpQLSf3nzaBcjR4Xz3kO0Qzyff2O4fQocoytQah-fpHs_Qoq3XzGg/viewform" target="_blank") заполните анкету спикера
+            //-     |.
+    section.section_blue
       .map-box#contacts
         .map-box__yandex
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=UzMmjjh0OFNvJmWOiDeM8VSJ29NYlQr8&amp;height=444&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6a2264d528ff8fa5e9f1e5d0b885797b47133abcb5de795db52446e4f90213fa&amp;height=444&amp;lang=ru_RU&amp;scroll=true"></script>
         .map-box__adress
           .container
             .row
@@ -129,8 +136,8 @@ html
                   h3.map-box__h Место проведения
                   ul
                     li.map-box__li Вологда,
-                    li.map-box__li ул. Горького, д.93
-                    li.map-box__li «Вологодский Кооперативный Колледж»
+                    li.map-box__li ул. Пушкинская, 25а
+                    li.map-box__li «Русский Дом»
                   h4 Контакты
                   div.contacts
                     a(href="tel:+7-911-504-33-16") +7-911-504-33-16
