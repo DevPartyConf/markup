@@ -81,6 +81,8 @@ html
                       a.socials__youtube(href="https://www.youtube.com/channel/UClZl8d7-zRequR1MVlRPT7A/" target="_blank")
                     li.socials__title
                       a.socials__github(href="https://github.com/DevPartyConf/markup" target="_blank")
+                    li.socials__title
+                      a.socials__telegram(href="https://t.me/devpartyconf" target="_blank")
     section.section_blue
       .container
         .row
@@ -130,16 +132,16 @@ html
                 li.normal Пример простой конфигурации на SaltStack.
                 li.normal Вопросы безопастности, хранение приватных данных в SaltStack.
               h3.speaker Андрей Кишкин, #[a(href="https://axcient.com" target="_blank") Axcient]
-        #talk-4.row.talk
+        //- #talk-4.row.talk
           .col-lg-3
             .content-box-2
               //- img(src="../img/persons/16.jpg", alt="Александр Алексеев")
               .trapezoid
           .col-lg-9
             .content-box-2
-              h2.talk Как войти в IT
-              p.content-box__p_mm Я поделюсь опытом отбора кандидатов на профессии, которым нигде не учат — гейм-дизайнер, тестировщик, траффик-менеджер. Где и кого искать, как проводить отбор и оценивать кандидатов.
-              h3.speaker Вера Сесявина, #[a(href="https://www.broccoligames.ru" target="_blank") Broccoli Games]
+              h2.talk
+              p.content-box__p_mm 
+              h3.speaker , #[a(href="https://www.broccoligames.ru" target="_blank") Broccoli Games]
         #talk-5.row.talk
           .col-lg-3
             .content-box-2
@@ -178,7 +180,7 @@ html
               .trapezoid
           .col-lg-9
             .content-box-2
-              h2.talk Как с помощью Node.js мы реализовали страницу статуса заказа с отслеживанием курьера в реальном времени
+              h2.talk Доставка пиццы в режиме OnLine
               p.content-box__p_mm В докладе будет представлен вниманию горизонтально масштабируемый realtime-сервер, поддерживающий подключения клиентов по websocket.
               |В докладе:
               ul
