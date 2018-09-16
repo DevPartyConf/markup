@@ -117,66 +117,244 @@ html
                   .swiper-pagination
                 .btn-center
                   a(href="https://vk.com/album-71152000_242820213" target="_blank").button.button_anim.header__title_button Перейти в альбом
-            .content-box.content-box_white
+            .content-box.content-box_white.schedule
               h2#schedule.content-box__h Программа
-              p.content-box__p #[a(href="talks.html#talk-1" target="_blank") Список докладов] конференции ещё обновляется и мы в процессе формирования программы, но вы можете подписаться на наши новости или на наш канал в Telegram #[a(href="https://t.me/devpartyconf" target="_blank") DevPartyConf], чтобы мы могли вам сообщить, когда она будет готова.
-              // Begin MailChimp Signup Form
-              style(type='text/css').
-                  #mc_embed_signup{background:#fff; font:14px Helvetica,Arial,sans-serif;  max-width:400px; margin:0 auto}
-              div#mc_embed_signup
-                form#mc-embedded-subscribe-form.validate(action='https://devparty.us12.list-manage.com/subscribe/post?u=d8162f2478dc28a2491719736&id=a731d9b4e5', method='post', name='mc-embedded-subscribe-form', target='_blank', novalidate='')
-                  #mc_embed_signup_scroll
-                    h2 &Pcy;&ocy;&dcy;&pcy;&icy;&scy;&acy;&tcy;&softcy;&scy;&yacy; &ncy;&acy; &ncy;&ocy;&vcy;&ocy;&scy;&tcy;&icy; &ocy;&tcy; DevParty
-                    .indicates-required
-                      span.asterisk *
-                      |  обязательное поле
-                    .mc-field-group
-                      label(for='mce-EMAIL')
-                        | &Ecy;&lcy;&iecy;&kcy;&tcy;&rcy;&ocy;&ncy;&ncy;&acy;&yacy; &pcy;&ocy;&chcy;&tcy;&acy;
-                        span.asterisk *
-                      | &#x9;
-                      input#mce-EMAIL.required.email(type='email', value='', name='EMAIL')
-                    .mc-field-group
-                      label(for='mce-FNAME') &Icy;&mcy;&yacy;
-                      | &#x9;
-                      input#mce-FNAME(type='text', value='', name='FNAME')
-                    .mc-field-group
-                      label(for='mce-LNAME') &Fcy;&acy;&mcy;&icy;&lcy;&icy;&yacy;
-                      | &#x9;
-                      input#mce-LNAME(type='text', value='', name='LNAME')
-                    | &#x9;
-                    #mce-responses.clear
-                      #mce-error-response.response(style='display:none')
-                      | &#x9;&#x9;
-                      #mce-success-response.response(style='display:none')
-                    // real people should not fill this in and expect good things - do not remove this or risk form bot signups
-                    div(style='position: absolute; left: -5000px;', aria-hidden='true')
-                      input(type='text', name='b_d8162f2478dc28a2491719736_a731d9b4e5', tabindex='-1', value='')
-                    .clear
-                      input#mc-embedded-subscribe.button(type='submit', value='Подписаться', name='subscribe')
-                      script(type='text/javascript', src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
-                      script(type='text/javascript').
-                          (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text'; /*
-                          */
-                          $.extend($.validator.messages, {
-                          required: "Это поле необходимо заполнить.",
-                          remote: "Пожалуйста, введите правильное значение.",
-                          email: "Пожалуйста, введите корректный адрес электронной почты.",
-                          url: "Пожалуйста, введите корректный URL.",
-                          date: "Пожалуйста, введите корректную дату.",
-                          dateISO: "Пожалуйста, введите корректную дату в формате ISO.",
-                          number: "Пожалуйста, введите число.",
-                          digits: "Пожалуйста, вводите только цифры.",
-                          creditcard: "Пожалуйста, введите правильный номер кредитной карты.",
-                          equalTo: "Пожалуйста, введите такое же значение ещё раз.",
-                          accept: "Пожалуйста, выберите файл с правильным расширением.",
-                          maxlength: $.validator.format("Пожалуйста, введите не больше {0} символов."),
-                          minlength: $.validator.format("Пожалуйста, введите не меньше {0} символов."),
-                          rangelength: $.validator.format("Пожалуйста, введите значение длиной от {0} до {1} символов."),
-                          range: $.validator.format("Пожалуйста, введите число от {0} до {1}."),
-                          max: $.validator.format("Пожалуйста, введите число, меньшее или равное {0}."),
-                          min: $.validator.format("Пожалуйста, введите число, большее или равное {0}.")
-                          });}(jQuery));var $mcj = jQuery.noConflict(true);
+              p.content-box__p2 Возможны изменения (последнее обновление 16.09.2018 14:00)
+              .section              
+                p.room.bordered
+                  .time 09:00 – 10:00
+                  .desc
+                    | Регистрация, welcome-кофе
+                  .clear
+              .clear
+              #sec-1.section
+                p.room.bordered 1 зал
+                .clear
+                .block
+                  .time 10:00 – 10:20
+                  .desc
+                    | Открытие. Приветствие участников конференции
+                  .clear
+                .block.software
+                  .time 10:30 – 11:00
+                  .desc
+                    a.talk(href="talks.html#talk-1") Независимость команды — найти баланс
+                    br
+                    span.name Алексей Катаев, 
+                    span.company Skyeng
+                  .clear
+                .block.time-break
+                  .time 11:00 – 11:10
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 11:10 – 11:40
+                  .desc
+                    a.talk(href="talks.html#talk-3") Проектирование, разработка и эксплуатация высоконагруженной системы онлайн репликации &gt; 500 ТБ и 1 млрд. файлов клиентов между континентами: Amazon S3 (США) — облако Mail.ru (Россия)
+                    br
+                    span.name Александр Сербул, 
+                    span.company 1С-Битрикс
+                  .clear
+                .block.time-break
+                  .time 11:40 – 11:50
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 11:50 – 12:20
+                  .desc
+                    a.talk(href="talks.html#talk-5") SaltStack: в чем соль оркестрации в IT-проекте
+                    br
+                    span.name Андрей Кишкин,  
+                    span.company Axcient
+                  .clear
+                .block.time-break
+                  .time 12:20 – 12:30
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 12:30 – 13:00
+                  .desc
+                    a.talk(href="talks.html#talk-11") Укрощение шины данных. Как наладить связь между сервисами                    
+                    br
+                    span.name Илья Овчинников, 
+                    span.company ПиццаФабрика IT
+                  .clear
+                .block.time-break
+                  .time 13:00 – 14:00
+                  .desc
+                    | Обед
+                  .clear
+                .block.software
+                  .time 14:00 – 14:30
+                  .desc
+                    a.talk(href="talks.html#talk-4") Построение отказоустойчивой масштабируемой системы обмена сообщений с помощью ActiveMQ                    
+                    br
+                    span.name Андрей Григоров, 
+                    span.company R-Style Softlab
+                  .clear
+                .block.time-break
+                  .time 14:30 – 14:40
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 14:40 – 15:10
+                  .desc
+                    a.talk(href="talks.html#talk-10") Доставка пиццы в режиме OnLine
+                    br
+                    span.name Александр Елюков, 
+                    span.company ПиццаФабрика IT
+                  .clear
+                .block.time-break
+                  .time 15:10 – 15:40
+                  .desc
+                    | Кофе-брейк
+                  .clear
+                .block.software
+                  .time 15:40 – 16:10
+                  .desc
+                    a.talk(href="talks.html#talk-16") Автоматизированное тестирование для всех или как мы стартапщикам помогли
+                    br
+                    span.name Николай Гнусов, 
+                    span.company ООО «Северотек-Автоматизация»
+                  .clear
+                .block.time-break
+                  .time 16:10 – 16:20
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 16:20 – 16:50
+                  .desc
+                    a.talk(href="talks.html#talk-15") Автоматизируем дворец британской королевы на Python
+                    br
+                    span.name Николай Головкин
+                  .clear
+                .block.time-break
+                  .time 16:50 – 17:00
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 17:00 – 17:30
+                  .desc
+                    a.talk(href="talks.html#talk-2") Сияющий Agile у наших партнеров и клиентов: практика использования, подводные камни, суицид, медитация и нирванна
+                    br
+                    span.name  Александр Сербул, 
+                    span.company 1C-Битрикс                
+                  .clear
+                .block
+                  .time 17:30
+                  .desc
+                    | Закрытие конференции
+                  .clear
+              #sec-2.section
+                p.room.bordered 2 зал
+                .clear
+                .block.software.spec-space.spec-1
+                  .time 10:30 – 11:00
+                  .desc
+                    a.talk(href="talks.html#talk-8") «Привет, я знаю кто ты!» Или немного о биометрии
+                    br
+                    span.name Светлана Волкова, 
+                    span.company Smilart
+                  .clear
+                .block.time-break
+                  .time 11:00 – 11:10
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 11:10 – 11:40
+                  .desc
+                    a.talk(href="talks.html#talk-12") На волне автоматизации тестирования мобильных игр
+                    br
+                    span.name Виталий Гончаров, 
+                    span.company Playrix
+                  .clear
+                .block.time-break
+                  .time 11:40 – 11:50
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 11:50 – 12:20
+                  .desc
+                    a.talk(href="talks.html#talk-9") (Бес)полезное логирование
+                    br
+                    span.name Олег Стрекаловский, 
+                    span.company Smilart
+                  .clear
+                .block.time-break
+                  .time 12:20 – 12:30
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 12:30 – 13:00
+                  .desc
+                    a.talk(href="talks.html#talk-6") Многопоточность в Unity средствами реактивных расширений
+                    br
+                    span.name Вячеслав Игнатьевский, 
+                    span.company Broccoli Games
+                  .clear
+                .block.time-break
+                  .time 13:00 – 14:00
+                  .desc
+                    | Обед
+                  .clear
+                .block.software
+                  .time 14:00 – 14:30
+                  .desc
+                    a.talk(href="talks.html#talk-17") Как быстро раскидать апдейты по миру и заставить дистрибутивы похудеть
+                    br
+                    span.name Рыбакова Юлия, 
+                    span.company CDNVideo
+                  .clear
+                .block.time-break
+                  .time 14:30 – 14:40
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 14:40 – 15:10
+                  .desc
+                    a.talk(href="talks.html#talk-7") A/B тестирование в геймдизайне
+                    .program-materials
+                    br
+                    span.name Салах Сивушков, 
+                    span.company Broccoli Games
+                  .clear
+                .block.time-break
+                  .time 15:10 – 15:40
+                  .desc
+                    | Кофе-брейк
+                  .clear
+                .block.software
+                  .time 15:40 – 16:10
+                  .desc
+                    a.talk(href="talks.html#talk-14") Отложите на завтра. Управление временем айтишника
+                    br
+                    span.name Владимир Варнавский, 
+                    span.company 33 Кита
+                  .clear
+                .block.time-break
+                  .time 16:10 – 16:20
+                  .desc
+                    | Перерыв
+                  .clear
+                .block.software
+                  .time 16:20 – 16:50
+                  .desc
+                    a.talk(href="talks.html#talk-13") Взгляни на мир глазами гейм-дизайнера
+                    br
+                    span.name Даниил Грудин,  
+                    span.company Playrix
+                  .clear
+              .clear
     section.section_dark
       .container
         .row
